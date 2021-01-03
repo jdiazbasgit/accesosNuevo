@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="accesos")
-public class Acceso
+public class Access
 {
 
 	@Id
@@ -50,7 +50,7 @@ public class Acceso
 	
 	@ManyToOne
 	@JoinColumn(name="empleados_id")
-	private Empleado empleado;
+	private Employee empleado;
 
 	public int getId()
 	{
@@ -152,12 +152,12 @@ public class Acceso
 		this.minutoReal = minutoReal;
 	}
 
-	public Empleado getEmpleado()
+	public Employee getEmpleado()
 	{
 		return empleado;
 	}
 
-	public void setEmpleado(Empleado empleado)
+	public void setEmpleado(Employee empleado)
 	{
 		this.empleado = empleado;
 	}

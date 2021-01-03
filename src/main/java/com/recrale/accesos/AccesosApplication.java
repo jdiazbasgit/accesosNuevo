@@ -45,7 +45,6 @@ public class AccesosApplication extends SpringBootServletInitializer {
 			http.csrf().disable()
 				.addFilterAfter(new JWTAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
 				.authorizeRequests().antMatchers(HttpMethod.POST, "/user").permitAll()
-				.antMatchers(HttpMethod.GET, "/api").permitAll()
 				.anyRequest().authenticated();
 		}
 		

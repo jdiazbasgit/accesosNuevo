@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.recrale.accesos.DTOs.User;
+import com.recrale.accesos.dtos.UserDto;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -19,13 +19,13 @@ import io.jsonwebtoken.SignatureAlgorithm;
 public class UserController {
 
 	@PostMapping("user")
-	public User login(@RequestParam("user") String  username, @RequestParam("password") String pwd) {
+	public UserDto login(@RequestParam("user") String  username, @RequestParam("password") String pwd) {
 		
-		User user=null;
+		UserDto user=null;
 		if(username.equals("pepe"))
 		{
 			String token = getJWTToken(username,"ROLE_USER");
-			 user = new User();
+			 user = new UserDto();
 			user.setUser(username);
 			user.setToken(token);
 			user.setRol("ROLE_USER");
@@ -35,7 +35,7 @@ public class UserController {
 		
 		
 		String token = getJWTToken(username,"ROLE_ADMIN");
-		 user = new User();
+		 user = new UserDto();
 		user.setUser(username);
 		user.setToken(token);	
 		}

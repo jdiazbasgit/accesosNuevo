@@ -5,10 +5,10 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.recrale.accesos.entidades.Estado;
+import com.recrale.accesos.entidades.Status;
 
 @Repository
-public interface EstadosRepository extends CrudRepository<Estado, Integer>
+public interface EstadosRepository extends CrudRepository<Status, Integer>
 {
 
 

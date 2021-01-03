@@ -13,7 +13,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="calendarios")
-public class Calendario
+public class Calendar
 {
 
 	@Id
@@ -25,7 +25,7 @@ public class Calendario
 	
 	@ManyToOne
 	@JoinColumn(name="estados_id")
-	private Estado estado;
+	private Status estado;
 
 	public int getId()
 	{
@@ -47,12 +47,12 @@ public class Calendario
 		this.fecha = fecha;
 	}
 
-	public Estado getEstado()
+	public Status getEstado()
 	{
 		return estado;
 	}
 
-	public void setEstado(Estado estado)
+	public void setEstado(Status estado)
 	{
 		this.estado = estado;
 	}

@@ -2,8 +2,8 @@ package com.recrale.accesos.repositorios;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.recrale.accesos.entidades.Rol;
+import com.recrale.accesos.entidades.Role;
 
-public interface RolRepository extends CrudRepository<Rol, Integer> {
+public interface RolRepository extends CrudRepository<Role, Integer> {
 
 }

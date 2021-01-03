@@ -3,10 +3,10 @@ package com.recrale.accesos.repositorios;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.recrale.accesos.entidades.Calendario;
+import com.recrale.accesos.entidades.Calendar;
 
 @Repository
-public interface CalendarioRepository extends CrudRepository<Calendario, Integer>
+public interface CalendarioRepository extends CrudRepository<Calendar, Integer>
 {
 
 	

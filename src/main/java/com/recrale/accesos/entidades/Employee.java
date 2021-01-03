@@ -15,7 +15,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="empleados")
-public class Empleado
+public class Employee
 {
 
 	@Id
@@ -42,14 +42,14 @@ public class Empleado
 	
 	@ManyToOne
 	@JoinColumn(name="jornadas_id")
-	private Jornada jornada;
+	private WorkingDay jornada;
 
-	public Jornada getJornada()
+	public WorkingDay getJornada()
 	{
 		return jornada;
 	}
 
-	public void setJornada(Jornada jornada)
+	public void setJornada(WorkingDay jornada)
 	{
 		this.jornada = jornada;
 	}

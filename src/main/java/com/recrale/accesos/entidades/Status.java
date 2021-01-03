@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="estados")
-public class Estado
+public class Status
 {
 
 	@Id

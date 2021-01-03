@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="empleados_estados")
-public class EmpleadoEstado
+public class EmployeeStatus
 {
  
 	@Id
@@ -19,19 +19,19 @@ public class EmpleadoEstado
 	
 	@ManyToOne
 	@JoinColumn(name="empleados_id")
-	private Empleado empleado;
+	private Employee empleado;
 	
 	@ManyToOne
 	@JoinColumn(name="estados_id")
-	private Estado estado;
+	private Status estado;
 	
 	@ManyToOne
 	@JoinColumn(name="calendarios_id")
-	private Calendario calendario;
+	private Calendar calendario;
 	
 	@ManyToOne
 	@JoinColumn(name="jornadas_id")
-	private Jornada jornada;
+	private WorkingDay jornada;
  
 	public int getId()
 	{
@@ -43,42 +43,42 @@ public class EmpleadoEstado
 		this.id = id;
 	}
 
-	public Empleado getEmpleado()
+	public Employee getEmpleado()
 	{
 		return empleado;
 	}
 
-	public void setEmpleado(Empleado empleado)
+	public void setEmpleado(Employee empleado)
 	{
 		this.empleado = empleado;
 	}
 
-	public Estado getEstado()
+	public Status getEstado()
 	{
 		return estado;
 	}
 
-	public void setEstado(Estado estado)
+	public void setEstado(Status estado)
 	{
 		this.estado = estado;
 	}
 
-	public Calendario getCalendario()
+	public Calendar getCalendario()
 	{
 		return calendario;
 	}
 
-	public void setCalendario(Calendario calendario)
+	public void setCalendario(Calendar calendario)
 	{
 		this.calendario = calendario;
 	}
 
-	public Jornada getJornada()
+	public WorkingDay getJornada()
 	{
 		return jornada;
 	}
 
-	public void setJornada(Jornada jornada)
+	public void setJornada(WorkingDay jornada)
 	{
 		this.jornada = jornada;
 	}

@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "jornadas")
-public class Jornada
+public class WorkingDay
 {
 
 	@Id

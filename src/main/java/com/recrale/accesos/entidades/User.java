@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "usuarios")
-public class Usuario
+public class User
 {
 
 	@Id
@@ -29,7 +29,7 @@ public class Usuario
 	
 	@ManyToOne
 	@JoinColumn(name="roles_id")
-	private Rol rol;
+	private Role rol;
 	
 	public int getId() {
 		return id;
@@ -63,11 +63,11 @@ public class Usuario
 		this.enabled = enabled;
 	}
 
-	public Rol getRol() {
+	public Role getRol() {
 		return rol;
 	}
 
-	public void setRol(Rol rol) {
+	public void setRol(Role rol) {
 		this.rol = rol;
 	}
 
