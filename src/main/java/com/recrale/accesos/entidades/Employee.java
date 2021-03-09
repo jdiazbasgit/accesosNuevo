@@ -42,14 +42,14 @@ public class Employee
 	
 	@ManyToOne
 	@JoinColumn(name="jornadas_id")
-	private WorkingDay jornada;
+	private Jornada jornada;
 
-	public WorkingDay getJornada()
+	public Jornada getJornada()
 	{
 		return jornada;
 	}
 
-	public void setJornada(WorkingDay jornada)
+	public void setJornada(Jornada jornada)
 	{
 		this.jornada = jornada;
 	}

@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "jornadas")
-public class WorkingDay
+public class Jornada
 {
 
 	@Id
@@ -30,6 +30,28 @@ public class WorkingDay
 	
 	@Column
 	private String viernes;
+	
+	@Column
+	private String sabado;
+	
+	public String getSabado() {
+		return sabado;
+	}
+
+	public void setSabado(String sabado) {
+		this.sabado = sabado;
+	}
+
+	public String getDomingo() {
+		return domingo;
+	}
+
+	public void setDomingo(String domingo) {
+		this.domingo = domingo;
+	}
+
+	@Column
+	private String domingo;
 
 	@Column
 	private String descripcion;

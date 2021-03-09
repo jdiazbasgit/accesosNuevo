@@ -45,7 +45,7 @@ public class UserController {
 		UserDto userDto=new UserDto();
 		User user=getUsuarioRepository().findByUserName(username);
 		BCryptPasswordEncoder encoder= new BCryptPasswordEncoder();
-		if(user!=null && encoder.matches(pwd, user.getPassword())) {
+		if(user!=null && pwd.equals(user.getPassword())){//&& encoder.matches(pwd, user.getPassword())) {
 			userDto.setUser(username);
 			userDto.setToken(getJWTToken(username,user.getRol().getRol()));
 			userDto.setRol(user.getRol().getRol());
