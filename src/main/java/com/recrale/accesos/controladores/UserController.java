@@ -1,35 +1,51 @@
 package com.recrale.accesos.controladores;
 
-import java.io.IOException;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Optional;
 
-import javax.servlet.http.HttpServletResponse;
+import javax.websocket.server.PathParam;
 
-import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.recrale.accesos.dtos.UserDto;
-import com.recrale.accesos.entidades.User;
+import com.recrale.accesos.Year;
+import com.recrale.accesos.entidades.Calendario;
+import com.recrale.accesos.entidades.Employee;
+import com.recrale.accesos.entidades.EmployeeStatus;
+import com.recrale.accesos.entidades.Jornada;
+import com.recrale.accesos.repositorios.CalendarioRepository;
+import com.recrale.accesos.repositorios.EmpleadoRepositoryInterface;
+import com.recrale.accesos.repositorios.JornadaRepository;
 import com.recrale.accesos.repositorios.UsuarioRepository;
 
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
-
 @RestController
+@RequestMapping("/api")
+
 public class UserController {
-	
+
 	@Autowired
 	private UsuarioRepository usuarioRepository;
+	@Autowired
+	private EmpleadoRepositoryInterface empleadoRepositoryInterface;
+	@Autowired
+	private JornadaRepository jornadaRepository;
 	
-	public static String UNAUTHORIZED="Usuario o clave incorrectos";
+	
+
+	@Autowired
+	private CalendarioRepository calendarioRepository;
+
+	public static String UNAUTHORIZED = "Usuario o clave incorrectos";
 
 	public UsuarioRepository getUsuarioRepository() {
 		return usuarioRepository;
@@ -39,46 +55,131 @@ public class UserController {
 		this.usuarioRepository = usuarioRepository;
 	}
 
-	@PostMapping("user")
-	public UserDto login(@RequestParam("username") String  username, @RequestParam("password") String pwd, HttpServletResponse response) throws IOException {
-		
-		UserDto userDto=new UserDto();
-		User user=getUsuarioRepository().findByUserName(username);
-		BCryptPasswordEncoder encoder= new BCryptPasswordEncoder();
-		if(user!=null && pwd.equals(user.getPassword())){//&& encoder.matches(pwd, user.getPassword())) {
-			userDto.setUser(username);
-			userDto.setToken(getJWTToken(username,user.getRol().getRol()));
-			userDto.setRol(user.getRol().getRol());
-			return userDto;
+	public UserController() {
+		// TODO Auto-generated constructor stub
+	}
+	@CrossOrigin(origins = "*")
+	@GetMapping("/jornadas/{id}")
+	public Optional<Jornada> getJornadasById(@PathVariable int id) {
+
+		return  getJornadaRepository().findById(id);
+	}
+	@CrossOrigin(origins = "*")
+	@GetMapping("/empleados/{id}")
+	public Optional<Employee> getJEmpleadosById(@PathVariable int id) {
+
+		return  getEmpleadoRepositoryInterface().findById(id);
+	}
+	@CrossOrigin(origins = "*")
+	@GetMapping("/calendario/{id}")
+	public Optional<Calendario> getJCalendariosById(@PathVariable int id) {
+
+		return  getCalendarioRepository().findById(id);
+	}
+	
+	@CrossOrigin(origins = "*")
+	@GetMapping("/calendarios")
+	public List<Calendario> getJCalendariosById() {
+
+		return  (List<Calendario>) getCalendarioRepository().findAll();
+	}
+
+	@CrossOrigin(origins = "*")
+	@GetMapping("/empleados")
+	public List<Employee> getEmpleados() {
+
+		return (List<Employee>) getEmpleadoRepositoryInterface().findAll();
+	}
+	
+	@CrossOrigin(origins = "*")
+	@PostMapping("/empleados")
+	public Employee getEmpleados( @RequestBody Employee employee) {
+
+		return  getEmpleadoRepositoryInterface().save(employee);
+	}
+	
+	@CrossOrigin(origins = "*")
+	@PostMapping("/jornadas")
+	public Jornada getJornada( @RequestBody Jornada jornada) {
+
+		return  getJornadaRepository().save(jornada);
+	}
+	
+	
+	
+	
+	@CrossOrigin(origins = "*")
+	@GetMapping("/jornadas")
+	public List<Jornada> getJornadas() {
+
+		return (List<Jornada>) getJornadaRepository().findAll();
+	}
+	@CrossOrigin(origins = "*")
+	@GetMapping("/calendario/completo/{year}")
+	public List<Calendario> getJornadas(@PathVariable int year) {
+		List<Calendario> salida= new ArrayList<Calendario>();
+		List<Calendario> calendario = (List<Calendario>) getCalendarioRepository().getCalendarioOrdenado();
+		int diaSemana=0;
+		int semanaMes =0;
+		int mes=0;
+		for (Calendario dia : calendario) {
+			
+			GregorianCalendar fecha = new GregorianCalendar();
+			fecha.setTimeInMillis(dia.getFecha().getTime());
+			
+			if (fecha.get(Calendar.YEAR)==year) {
+				 diaSemana = fecha.get(Calendar.DAY_OF_WEEK);
+				if (diaSemana > 1){
+					diaSemana -= 1;
+				}
+				else {
+					diaSemana = 7;
+				}
+				dia.setDiaSemana(diaSemana);
+				
+				
+				 semanaMes = fecha.get(Calendar.WEEK_OF_MONTH);
+				
+				if ( semanaMes == 0) {
+					mes=fecha.get(Calendar.MONTH);
+				}
+				
+				
+				if (mes==fecha.get(Calendar.MONTH))
+					semanaMes+=1;
+				
+				//dia.setFecha(fecha.getGregorianChange());
+				dia.setSemanaMes(semanaMes);
+				salida.add(dia);
+			}
+			
 		}
-		else {
-			response.setStatus(HttpServletResponse.SC_FORBIDDEN);
-			response.sendError(HttpServletResponse.SC_FORBIDDEN,UserController.UNAUTHORIZED);
-			return null;
-		}  
-		
-		
-		
+		return salida;
+
 	}
 
-	private String getJWTToken(String username, String rol) {
-		String secretKey = "recraleKey";
-		List<GrantedAuthority> grantedAuthorities = AuthorityUtils
-				.commaSeparatedStringToAuthorityList(rol);
-		
-		String token = Jwts
-				.builder()
-				.setId("cursoJWT")
-				.setSubject(username)
-				.claim("authorities",
-						grantedAuthorities.stream()
-								.map(GrantedAuthority::getAuthority)
-								.collect(Collectors.toList()))
-				.setIssuedAt(new Date(System.currentTimeMillis()))
-				.setExpiration(new Date(System.currentTimeMillis() + 600000))
-				.signWith(SignatureAlgorithm.HS512,
-						secretKey.getBytes()).compact();
-
-		return "Bearer " + token;
+	public EmpleadoRepositoryInterface getEmpleadoRepositoryInterface() {
+		return empleadoRepositoryInterface;
 	}
+
+	public void setEmpleadoRepositoryInterface(EmpleadoRepositoryInterface empleadoRepositoryInterface) {
+		this.empleadoRepositoryInterface = empleadoRepositoryInterface;
+	}
+
+	public JornadaRepository getJornadaRepository() {
+		return jornadaRepository;
+	}
+
+	public void setJornadaRepository(JornadaRepository jornadaRepository) {
+		this.jornadaRepository = jornadaRepository;
+	}
+
+	public CalendarioRepository getCalendarioRepository() {
+		return calendarioRepository;
+	}
+
+	public void setCalendarioRepository(CalendarioRepository calendarioRepository) {
+		this.calendarioRepository = calendarioRepository;
+	}
+
 }

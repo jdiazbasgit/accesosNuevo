@@ -1,6 +1,6 @@
 package com.recrale.accesos.entidades;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,10 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name="calendarios")
-public class Calendar
+public class Calendario
 {
 
 	@Id
@@ -22,6 +23,11 @@ public class Calendar
 	
 	@Column
 	private Date fecha;
+	@Transient
+	private int diaSemana;
+	
+	@Transient
+	private int semanaMes;
 	
 	@ManyToOne
 	@JoinColumn(name="estados_id")
@@ -55,6 +61,22 @@ public class Calendar
 	public void setEstado(Status estado)
 	{
 		this.estado = estado;
+	}
+
+	public int getDiaSemana() {
+		return diaSemana;
+	}
+
+	public void setDiaSemana(int diaSemana) {
+		this.diaSemana = diaSemana;
+	}
+
+	public int getSemanaMes() {
+		return semanaMes;
+	}
+
+	public void setSemanaMes(int semanaMes) {
+		this.semanaMes = semanaMes;
 	}
 	
 	

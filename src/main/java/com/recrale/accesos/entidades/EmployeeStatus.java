@@ -27,7 +27,7 @@ public class EmployeeStatus
 	
 	@ManyToOne
 	@JoinColumn(name="calendarios_id")
-	private Calendar calendario;
+	private Calendario calendario;
 	
 	@ManyToOne
 	@JoinColumn(name="jornadas_id")
@@ -63,12 +63,12 @@ public class EmployeeStatus
 		this.estado = estado;
 	}
 
-	public Calendar getCalendario()
+	public Calendario getCalendario()
 	{
 		return calendario;
 	}
 
-	public void setCalendario(Calendar calendario)
+	public void setCalendario(Calendario calendario)
 	{
 		this.calendario = calendario;
 	}
