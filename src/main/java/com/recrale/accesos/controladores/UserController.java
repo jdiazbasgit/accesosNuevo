@@ -5,6 +5,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 import javax.websocket.server.PathParam;
 
@@ -40,12 +41,10 @@ public class UserController {
 	@Autowired
 	private JornadaRepository jornadaRepository;
 	
-	
-
 	@Autowired
 	private CalendarioRepository calendarioRepository;
 
-	public static String UNAUTHORIZED = "Usuario o clave incorrectos";
+	public static final String UNAUTHORIZED = "Usuario o clave incorrectos";
 
 	public UsuarioRepository getUsuarioRepository() {
 		return usuarioRepository;
@@ -115,45 +114,12 @@ public class UserController {
 		return (List<Jornada>) getJornadaRepository().findAll();
 	}
 	@CrossOrigin(origins = "*")
-	@GetMapping("/calendario/completo/{year}")
-	public List<Calendario> getJornadas(@PathVariable int year) {
-		List<Calendario> salida= new ArrayList<Calendario>();
-		List<Calendario> calendario = (List<Calendario>) getCalendarioRepository().getCalendarioOrdenado();
-		int diaSemana=0;
-		int semanaMes =0;
-		int mes=0;
-		for (Calendario dia : calendario) {
-			
-			GregorianCalendar fecha = new GregorianCalendar();
-			fecha.setTimeInMillis(dia.getFecha().getTime());
-			
-			if (fecha.get(Calendar.YEAR)==year) {
-				 diaSemana = fecha.get(Calendar.DAY_OF_WEEK);
-				if (diaSemana > 1){
-					diaSemana -= 1;
-				}
-				else {
-					diaSemana = 7;
-				}
-				dia.setDiaSemana(diaSemana);
-				
-				
-				 semanaMes = fecha.get(Calendar.WEEK_OF_MONTH);
-				
-				if ( semanaMes == 0) {
-					mes=fecha.get(Calendar.MONTH);
-				}
-				
-				
-				if (mes==fecha.get(Calendar.MONTH))
-					semanaMes+=1;
-				
-				//dia.setFecha(fecha.getGregorianChange());
-				dia.setSemanaMes(semanaMes);
-				salida.add(dia);
-			}
-			
-		}
+	@GetMapping("/calendario")
+	public Stream<Calendario> getJornadas(@RequestParam int year) {
+		Stream<Calendario> salida= getCalendarioRepository().getCalendarioByYear(year);
+		//List<Calendario> calendario = (List<Calendario>) getCalendarioRepository().getCalendarioOrdenado();
+		
+		
 		return salida;
 
 	}

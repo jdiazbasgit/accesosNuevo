@@ -1,6 +1,9 @@
 package com.recrale.accesos.entidades;
 
+
+import java.sql.Timestamp;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,6 +13,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
 @Entity
@@ -22,7 +27,7 @@ public class Calendario
 	private int id;
 	
 	@Column
-	private Date fecha;
+	private GregorianCalendar fecha;
 	@Transient
 	private int diaSemana;
 	
@@ -43,15 +48,7 @@ public class Calendario
 		this.id = id;
 	}
 
-	public Date getFecha()
-	{
-		return fecha;
-	}
-
-	public void setFecha(Date fecha)
-	{
-		this.fecha = fecha;
-	}
+	
 
 	public Status getEstado()
 	{
@@ -77,6 +74,14 @@ public class Calendario
 
 	public void setSemanaMes(int semanaMes) {
 		this.semanaMes = semanaMes;
+	}
+
+	public GregorianCalendar getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(GregorianCalendar fecha) {
+		this.fecha = fecha;
 	}
 	
 	
