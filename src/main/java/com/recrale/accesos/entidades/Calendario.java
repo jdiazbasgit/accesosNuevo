@@ -35,7 +35,7 @@ public class Calendario
 	private int semanaMes;
 	
 	@ManyToOne
-	@JoinColumn(name="estados_id")
+	//@JoinColumn(name="estado_id")
 	private Status estado;
 
 	public int getId()

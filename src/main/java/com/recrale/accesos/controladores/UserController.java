@@ -40,7 +40,7 @@ public class UserController {
 	private EmpleadoRepositoryInterface empleadoRepositoryInterface;
 	@Autowired
 	private JornadaRepository jornadaRepository;
-	
+
 	@Autowired
 	private CalendarioRepository calendarioRepository;
 
@@ -57,30 +57,33 @@ public class UserController {
 	public UserController() {
 		// TODO Auto-generated constructor stub
 	}
+
 	@CrossOrigin(origins = "*")
 	@GetMapping("/jornadas/{id}")
 	public Optional<Jornada> getJornadasById(@PathVariable int id) {
 
-		return  getJornadaRepository().findById(id);
+		return getJornadaRepository().findById(id);
 	}
+
 	@CrossOrigin(origins = "*")
 	@GetMapping("/empleados/{id}")
 	public Optional<Employee> getJEmpleadosById(@PathVariable int id) {
 
-		return  getEmpleadoRepositoryInterface().findById(id);
+		return getEmpleadoRepositoryInterface().findById(id);
 	}
+
 	@CrossOrigin(origins = "*")
 	@GetMapping("/calendario/{id}")
-	public Optional<Calendario> getJCalendariosById(@PathVariable int id) {
+	public Optional<Calendario> getCalendarioById(@PathVariable int id) {
 
-		return  getCalendarioRepository().findById(id);
+		return getCalendarioRepository().findById(id);
 	}
-	
+
 	@CrossOrigin(origins = "*")
 	@GetMapping("/calendarios")
 	public List<Calendario> getJCalendariosById() {
 
-		return  (List<Calendario>) getCalendarioRepository().findAll();
+		return (List<Calendario>) getCalendarioRepository().findAll();
 	}
 
 	@CrossOrigin(origins = "*")
@@ -89,40 +92,68 @@ public class UserController {
 
 		return (List<Employee>) getEmpleadoRepositoryInterface().findAll();
 	}
-	
+
 	@CrossOrigin(origins = "*")
 	@PostMapping("/empleados")
-	public Employee getEmpleados( @RequestBody Employee employee) {
+	public Employee getEmpleados(@RequestBody Employee employee) {
 
-		return  getEmpleadoRepositoryInterface().save(employee);
+		return getEmpleadoRepositoryInterface().save(employee);
 	}
-	
+
 	@CrossOrigin(origins = "*")
 	@PostMapping("/jornadas")
-	public Jornada getJornada( @RequestBody Jornada jornada) {
+	public Jornada getJornada(@RequestBody Jornada jornada) {
 
-		return  getJornadaRepository().save(jornada);
+		return getJornadaRepository().save(jornada);
 	}
-	
-	
-	
-	
+
+	@CrossOrigin(origins = "*")
+	@GetMapping("/prueba/{tipo}")
+	public Object[][] getFechaAndEstado(@PathVariable int tipo) {
+		return getCalendarioRepository().getFechaAndEstado(tipo);
+	}
+
 	@CrossOrigin(origins = "*")
 	@GetMapping("/jornadas")
 	public List<Jornada> getJornadas() {
 
 		return (List<Jornada>) getJornadaRepository().findAll();
 	}
+
 	@CrossOrigin(origins = "*")
-	@GetMapping("/calendario")
-	public Stream<Calendario> getJornadas(@RequestParam int year) {
-		Stream<Calendario> salida= getCalendarioRepository().getCalendarioByYear(year);
-		//List<Calendario> calendario = (List<Calendario>) getCalendarioRepository().getCalendarioOrdenado();
-		
-		
+	@GetMapping("/calendarios/{year}")
+	public Stream<Calendario> getCalendarioByYear(@PathVariable int year) {
+		Stream<Calendario> salida = getCalendarioRepository().getCalendarioByYear(year);
+		// List<Calendario> calendario = (List<Calendario>)
+		// getCalendarioRepository().getCalendarioOrdenado();
+
 		return salida;
 
 	}
+	
+	@CrossOrigin(origins = "*")
+	@GetMapping("/calendarios/{year}/{mes}")
+	public Stream<Calendario> getCalendarioByYearAndMonth(@PathVariable int year, @PathVariable int mes) {
+		Stream<Calendario> salida = getCalendarioRepository().getCalendarioByMonth(year, mes);
+		// List<Calendario> calendario = (List<Calendario>)
+		// getCalendarioRepository().getCalendarioOrdenado();
+
+		return salida;
+
+	}
+	
+	@CrossOrigin(origins = "*")
+	@GetMapping("/calendarios/{year}/{mes}/{semana}")
+	public Stream<Calendario> getCalendarioByYearAndMonthAndWeek(@PathVariable int year, @PathVariable int mes, @PathVariable int semana) {
+		Stream<Calendario> salida = getCalendarioRepository().getCalendarioByMonthAndWeek(year, mes, semana);
+		// List<Calendario> calendario = (List<Calendario>)
+		// getCalendarioRepository().getCalendarioOrdenado();
+
+		return salida;
+
+	}
+	
+	
 
 	public EmpleadoRepositoryInterface getEmpleadoRepositoryInterface() {
 		return empleadoRepositoryInterface;

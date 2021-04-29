@@ -1,5 +1,6 @@
 package com.recrale.accesos.repositorios;
 
+import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -15,43 +16,36 @@ import com.recrale.accesos.entidades.Calendario;
 @Repository
 public interface CalendarioRepository extends CrudRepository<Calendario, Integer> {
 
-	@Query("from Calendario c order by c.fecha")
+	 @Query("from Calendario c order by c.fecha")
 	List<Calendario> getCalendarioOrdenado();
 
+	// @Query("select c.fecha,e.descripcion from Calendario c,"
+	// + "Status e where c.estado=e and c.estado.id=:tipo")
+
+	// @Query(" from Calendario c, Status e")
+	@Query(value = "SELECT * FROM CALENDARIOS C, ESTADOS E WHERE C.ESTADO_ID=E.ID",
+			nativeQuery = true)
+	Object[][] getFechaAndEstado(int tipo);
+
 	default Stream<Calendario> getCalendarioByYear(int year) {
-		List<Calendario> calendario = (List<Calendario>) findAll();
-		for (Calendario dia : calendario) {
 
-			GregorianCalendar fecha = dia.getFecha();
-			//fecha.setTimeInMillis(dia.getFecha().getTime());
-			int diaSemana=0;
-			int semanaMes =0;
-			int mes=0;
-			if (fecha.get(Calendar.YEAR) == year) {
-				diaSemana = fecha.get(Calendar.DAY_OF_WEEK);
-				if (diaSemana > 1) {
-					diaSemana -= 1;
-				} else {
-					diaSemana = 7;
-				}
-				dia.setDiaSemana(diaSemana);
+		return ((List<Calendario>) getCalendarioOrdenado()).stream()
+				.filter((c) -> c.getFecha().get(Calendar.YEAR) == year);
+	}
 
-				semanaMes = fecha.get(Calendar.WEEK_OF_MONTH);
+	default Stream<Calendario> getCalendarioByMonth(int year, int mes) {
 
-				if (semanaMes == 0) {
-					mes = fecha.get(Calendar.MONTH);
-				}
+		return ((List<Calendario>) getCalendarioOrdenado()).stream()
+				.filter((c) -> c.getFecha().get(Calendar.YEAR) == year).
+				filter((c)->c.getFecha().get(Calendar.MONTH)==mes-1);
+	}
+	
+	default Stream<Calendario> getCalendarioByMonthAndWeek(int year, int mes, int semana) {
 
-				if (mes == fecha.get(Calendar.MONTH))
-					semanaMes += 1;
-
-				// dia.setFecha(fecha.getGregorianChange());
-				dia.setSemanaMes(semanaMes);
-			}
-
-		}
-		//return calendario.stream().filter(p -> p.getFecha().getYear() + 1900 == year);
-		return calendario.stream().filter(p->p.getFecha().get(Calendar.YEAR)==year);
+		return ((List<Calendario>) getCalendarioOrdenado()).stream()
+				.filter((c) -> c.getFecha().get(Calendar.YEAR) == year).
+				filter((c)->c.getFecha().get(Calendar.MONTH)==mes-1).
+				filter((c)->c.getFecha().get(Calendar.WEEK_OF_MONTH)==semana);
 	}
 
 }
