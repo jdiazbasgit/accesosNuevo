@@ -41,7 +41,6 @@ public class Employee
 	private Date fecha_baja;
 	
 	@ManyToOne
-	@JoinColumn(name="jornadas_id")
 	private Jornada jornada;
 
 	public Jornada getJornada()
@@ -122,6 +121,13 @@ public class Employee
 	public void setFecha_baja(Date fecha_baja)
 	{
 		this.fecha_baja = fecha_baja;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", nombre=" + nombre + ", apellidos=" + apellidos + ", dni=" + dni
+				+ ", identificador=" + identificador + ", fecha_alta=" + fecha_alta + ", fecha_baja=" + fecha_baja
+				+ ", jornada=" + jornada + "]";
 	}
 	
 }

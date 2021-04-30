@@ -96,7 +96,7 @@ public class UserController {
 	@CrossOrigin(origins = "*")
 	@PostMapping("/empleados")
 	public Employee getEmpleados(@RequestBody Employee employee) {
-
+		System.out.println(employee);
 		return getEmpleadoRepositoryInterface().save(employee);
 	}
 

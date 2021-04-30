@@ -18,19 +18,15 @@ public class EmployeeStatus
 	private int id;
 	
 	@ManyToOne
-	@JoinColumn(name="empleados_id")
 	private Employee empleado;
 	
 	@ManyToOne
-	@JoinColumn(name="estados_id")
 	private Status estado;
 	
 	@ManyToOne
-	@JoinColumn(name="calendarios_id")
 	private Calendario calendario;
 	
 	@ManyToOne
-	@JoinColumn(name="jornadas_id")
 	private Jornada jornada;
  
 	public int getId()
