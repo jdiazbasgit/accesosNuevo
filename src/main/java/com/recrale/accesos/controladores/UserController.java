@@ -1,15 +1,14 @@
 package com.recrale.accesos.controladores;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.websocket.server.PathParam;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,15 +18,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.recrale.accesos.Year;
+import com.recrale.accesos.dtos.UserDto;
 import com.recrale.accesos.entidades.Calendario;
 import com.recrale.accesos.entidades.Employee;
-import com.recrale.accesos.entidades.EmployeeStatus;
 import com.recrale.accesos.entidades.Jornada;
+import com.recrale.accesos.entidades.User;
 import com.recrale.accesos.repositorios.CalendarioRepository;
 import com.recrale.accesos.repositorios.EmpleadoRepositoryInterface;
 import com.recrale.accesos.repositorios.JornadaRepository;
 import com.recrale.accesos.repositorios.UsuarioRepository;
+
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 
 @RestController
 @RequestMapping("/api")
@@ -151,6 +153,53 @@ public class UserController {
 
 		return salida;
 
+	}
+	
+	@CrossOrigin(origins = "*")
+	@PostMapping("/user")
+	public UserDto login(@RequestParam("user") String  username, @RequestParam("password") String pwd) {
+		
+		UserDto user=null;
+		if(username.equals("pepe"))
+		{
+			String token = getJWTToken(username,"ROLE_USER");
+			 user = new UserDto();
+			user.setUser(username);
+			user.setToken(token);
+			user.setRol("ROLE_USER");
+		}
+		
+		if(username.equals("admin")) {
+		
+		
+		String token = getJWTToken(username,"ROLE_ADMIN");
+		 user = new UserDto();
+		user.setUser(username);
+		user.setToken(token);	
+		}
+		return user;
+		
+	}
+
+	private String getJWTToken(String username, String rol) {
+		String secretKey = "cursocap";
+		List<GrantedAuthority> grantedAuthorities = AuthorityUtils
+				.commaSeparatedStringToAuthorityList(rol);
+		
+		String token = Jwts
+				.builder()
+				.setId("cursoJWT")
+				.setSubject(username)
+				.claim("authorities",
+						grantedAuthorities.stream()
+								.map(GrantedAuthority::getAuthority)
+								.collect(Collectors.toList()))
+				.setIssuedAt(new Date(System.currentTimeMillis()))
+				.setExpiration(new Date(System.currentTimeMillis() + 600000))
+				.signWith(SignatureAlgorithm.HS512,
+						secretKey.getBytes()).compact();
+
+		return "Bearer " + token;
 	}
 	
 	
