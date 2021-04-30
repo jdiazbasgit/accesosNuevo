@@ -41,7 +41,6 @@ public class Empleado
 	private Date fecha_baja;
 	
 	@ManyToOne
-	@JoinColumn(name="jornadas_id")
 	private Jornada jornada;
 
 	public Jornada getJornada()

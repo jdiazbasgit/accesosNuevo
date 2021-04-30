@@ -43,7 +43,7 @@ public class UserController {
 	}
 
 	private String getJWTToken(String username, String rol) {
-		String secretKey = "recraleKey";
+		String secretKey = "cursocap";
 		List<GrantedAuthority> grantedAuthorities = AuthorityUtils
 				.commaSeparatedStringToAuthorityList(rol);
 		

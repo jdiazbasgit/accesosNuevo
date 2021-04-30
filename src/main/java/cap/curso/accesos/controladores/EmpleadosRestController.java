@@ -1,5 +1,7 @@
 package cap.curso.accesos.controladores;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -35,6 +37,12 @@ public class EmpleadosRestController
 	public Iterable<Empleado> getAllEmpleados()
 	{
 		return getEmpleadosService().findAll();
+	}
+	
+	@PostMapping("/")
+	public Empleado savelEmpleado(@RequestBody Empleado empleado)
+	{
+		return 	 getEmpleadosService().save(empleado);
 	}
 
 	@GetMapping("/{id}")
