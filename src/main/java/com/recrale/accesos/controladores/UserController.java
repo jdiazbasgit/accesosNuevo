@@ -22,6 +22,7 @@ import com.recrale.accesos.dtos.UserDto;
 import com.recrale.accesos.entidades.Calendario;
 import com.recrale.accesos.entidades.Employee;
 import com.recrale.accesos.entidades.Jornada;
+import com.recrale.accesos.entidades.LoginData;
 import com.recrale.accesos.entidades.User;
 import com.recrale.accesos.repositorios.CalendarioRepository;
 import com.recrale.accesos.repositorios.EmpleadoRepositoryInterface;
@@ -157,24 +158,24 @@ public class UserController {
 	
 	@CrossOrigin(origins = "*")
 	@PostMapping("/user")
-	public UserDto login(@RequestParam("user") String  username, @RequestParam("password") String pwd) {
+	public UserDto login(@RequestBody LoginData logindata) {
 		
 		UserDto user=null;
-		if(username.equals("pepe"))
+		if(logindata.getUsername().equals("pepe"))
 		{
-			String token = getJWTToken(username,"ROLE_USER");
+			String token = getJWTToken(logindata.getUsername(),"ROLE_USER");
 			 user = new UserDto();
-			user.setUser(username);
+			user.setUser(logindata.getUsername());
 			user.setToken(token);
 			user.setRol("ROLE_USER");
 		}
 		
-		if(username.equals("admin")) {
+		if(logindata.getUsername().equals("admin")) {
 		
 		
-		String token = getJWTToken(username,"ROLE_ADMIN");
+		String token = getJWTToken(logindata.getUsername(),"ROLE_ADMIN");
 		 user = new UserDto();
-		user.setUser(username);
+		user.setUser(logindata.getUsername());
 		user.setToken(token);	
 		}
 		return user;
@@ -229,3 +230,5 @@ public class UserController {
 	}
 
 }
+
+
