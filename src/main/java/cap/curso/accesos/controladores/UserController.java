@@ -26,22 +26,21 @@ public class UserController {
 	@Autowired
 	private UsuarioRepository   usuarioRepository;
 	@PostMapping("user")
-	public Optional<User> login(@RequestParam("user") String  username, @RequestParam("password") String pwd, HttpServletResponse response) {
+	public Optional<User> login(@RequestParam("user") String  username, @RequestParam("password") String pwd) {
 		
 		User user=null;
 		
 		BCryptPasswordEncoder bcrypt= new BCryptPasswordEncoder();
-		//String claveEncriptada=bcrypt.encode(pwd);
-		System.out.println(bcrypt.matches( pwd,getUsuarioRepository().findUserByUser(username).getPassword()));
-		if(username.equals(getUsuarioRepository().findUserByUser(username).getUser()))
+		
+		if(username.equals(getUsuarioRepository().findUserByUser(username).getUser()) && bcrypt.matches( pwd,getUsuarioRepository().findUserByUser(username).getPassword()))
 		{
-			if(bcrypt.matches( pwd,getUsuarioRepository().findUserByUser(username).getPassword())) {
+			
 			String token = getJWTToken(username,getUsuarioRepository().findUserByUser(username).getRol().getRol());
 			 user = new User();
 			user.setUser(username);
 			user.setToken(token);
 			user.setRol(getUsuarioRepository().findUserByUser(username).getRol().getRol());
-			}
+			
 		}
 		
 		
