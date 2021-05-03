@@ -36,12 +36,18 @@ public class EmpleadosRestController
 	@GetMapping("/")
 	public Iterable<Empleado> getAllEmpleados()
 	{
+		Iterable<Empleado> empleados=getEmpleadosService().findAll();
+		for (Empleado empleado : empleados) {
+			//empleado.
+		}
 		return getEmpleadosService().findAll();
 	}
 	
 	@PostMapping("/")
 	public Empleado savelEmpleado(@RequestBody Empleado empleado)
 	{
+		
+		
 		return 	 getEmpleadosService().save(empleado);
 	}
 

@@ -3,7 +3,7 @@ package cap.curso.accesos.DTOs;
 public class User {
 
 	private String user;
-	private String pwd;
+	
 	private String token;
 	
 	private String rol;
@@ -16,13 +16,6 @@ public class User {
 		this.user = user;
 	}
 
-	public String getPwd() {
-		return pwd;
-	}
-
-	public void setPwd(String pwd) {
-		this.pwd = pwd;
-	}
 
 	public String getToken() {
 		return token;

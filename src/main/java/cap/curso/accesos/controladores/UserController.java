@@ -2,43 +2,52 @@ package cap.curso.accesos.controladores;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import cap.curso.accesos.DTOs.User;
+import cap.curso.accesos.repositorios.UsuarioRepository;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
 @RestController
 public class UserController {
 
+	@Autowired
+	private UsuarioRepository   usuarioRepository;
 	@PostMapping("user")
-	public User login(@RequestParam("user") String  username, @RequestParam("password") String pwd) {
+	public Optional<User> login(@RequestParam("user") String  username, @RequestParam("password") String pwd, HttpServletResponse response) {
 		
 		User user=null;
-		if(username.equals("pepe"))
+		
+		BCryptPasswordEncoder bcrypt= new BCryptPasswordEncoder();
+		//String claveEncriptada=bcrypt.encode(pwd);
+		System.out.println(bcrypt.matches( pwd,getUsuarioRepository().findUserByUser(username).getPassword()));
+		if(username.equals(getUsuarioRepository().findUserByUser(username).getUser()))
 		{
-			String token = getJWTToken(username,"ROLE_USER");
+			if(bcrypt.matches( pwd,getUsuarioRepository().findUserByUser(username).getPassword())) {
+			String token = getJWTToken(username,getUsuarioRepository().findUserByUser(username).getRol().getRol());
 			 user = new User();
 			user.setUser(username);
 			user.setToken(token);
-			user.setRol("ROLE_USER");
+			user.setRol(getUsuarioRepository().findUserByUser(username).getRol().getRol());
+			}
 		}
 		
-		if(username.equals("admin")) {
 		
-		
-		String token = getJWTToken(username,"ROLE_ADMIN");
-		 user = new User();
-		user.setUser(username);
-		user.setToken(token);	
-		}
-		return user;
+		//if(user==null)
+			//return response.SC_UNAUTHORIZED;
+		return Optional.ofNullable(user);
 		
 	}
 
@@ -61,5 +70,13 @@ public class UserController {
 						secretKey.getBytes()).compact();
 
 		return "Bearer " + token;
+	}
+
+	public UsuarioRepository getUsuarioRepository() {
+		return usuarioRepository;
+	}
+
+	public void setUsuarioRepository(UsuarioRepository usuarioRepository) {
+		this.usuarioRepository = usuarioRepository;
 	}
 }
