@@ -1,31 +1,37 @@
 package com.recrale.accesos.controladores;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import javax.websocket.server.PathParam;
+import javax.naming.NamingException;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.Affordance;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.Link;
+import org.springframework.hateoas.RepresentationModel;
+import org.springframework.hateoas.TemplateVariables;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.util.UriComponents;
 
-import com.recrale.accesos.Year;
 import com.recrale.accesos.entidades.Calendario;
 import com.recrale.accesos.entidades.Employee;
-import com.recrale.accesos.entidades.EmployeeStatus;
 import com.recrale.accesos.entidades.Jornada;
+import com.recrale.accesos.entidades.Status;
 import com.recrale.accesos.repositorios.CalendarioRepository;
 import com.recrale.accesos.repositorios.EmpleadoRepositoryInterface;
+import com.recrale.accesos.repositorios.EstadosCrudRepository;
 import com.recrale.accesos.repositorios.JornadaRepository;
 import com.recrale.accesos.repositorios.UsuarioRepository;
 
@@ -34,13 +40,25 @@ import com.recrale.accesos.repositorios.UsuarioRepository;
 
 public class UserController {
 
+	
+
+	
+
+	
+
+	public UserController() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	@Autowired
 	private UsuarioRepository usuarioRepository;
 	@Autowired
 	private EmpleadoRepositoryInterface empleadoRepositoryInterface;
 	@Autowired
 	private JornadaRepository jornadaRepository;
-
+	@Autowired
+	private EstadosCrudRepository estadosRepository;
 	@Autowired
 	private CalendarioRepository calendarioRepository;
 
@@ -54,9 +72,7 @@ public class UserController {
 		this.usuarioRepository = usuarioRepository;
 	}
 
-	public UserController() {
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	@CrossOrigin(origins = "*")
 	@GetMapping("/jornadas/{id}")
@@ -82,19 +98,40 @@ public class UserController {
 	@CrossOrigin(origins = "*")
 	@GetMapping("/calendarios")
 	public List<Calendario> getJCalendariosById() {
-
+		/*
+		 * List<Calendario> calendarios=(List<Calendario>)
+		 * getCalendarioRepository().findAll();
+		 * 
+		 * //calendarios.stream().forEach((e)->e.add(Link.of("/estados/"+e.getEstado().
+		 * getId())));
+		 * 
+		 * for (Calendario calendario : calendarios) {
+		 * calendario.add(Link.of("").toUri()) }
+		 */
 		return (List<Calendario>) getCalendarioRepository().findAll();
 	}
 
 	@CrossOrigin(origins = "*")
-	@GetMapping("/empleados")
-	public List<Employee> getEmpleados() {
+	@GetMapping(value = "/empleados", produces = "application/hal+json")
+	public ResponseEntity<Iterable<Employee>> getEmpleados(HttpServletResponse response) {
 
-		return (List<Employee>) getEmpleadoRepositoryInterface().findAll();
+		HttpHeaders headers = new HttpHeaders();
+		headers.add(HttpHeaders.CONTENT_TYPE, "application/hal+json");
+
+		return ResponseEntity.ok().headers(headers).body(getEmpleadoRepositoryInterface().findAll());
+		// return (List<Employee>) getEmpleadoRepositoryInterface().findAll();
+	}
+
+	@CrossOrigin(origins = "*")
+	@GetMapping("/estados/{id}")
+	public Optional<Status> getEstadosById(@PathVariable int  id) {
+		
+		return getEstadosRepository().findById(id);
 	}
 
 	@CrossOrigin(origins = "*")
 	@PostMapping("/empleados")
+
 	public Employee getEmpleados(@RequestBody Employee employee) {
 		System.out.println(employee);
 		return getEmpleadoRepositoryInterface().save(employee);
@@ -122,29 +159,33 @@ public class UserController {
 
 	@CrossOrigin(origins = "*")
 	@GetMapping("/calendarios/{year}")
-	public Stream<Calendario> getCalendarioByYear(@PathVariable int year) {
-		Stream<Calendario> salida = getCalendarioRepository().getCalendarioByYear(year);
-		// List<Calendario> calendario = (List<Calendario>)
-		// getCalendarioRepository().getCalendarioOrdenado();
-
+	public List<Calendario> getCalendarioByYear(@PathVariable int year) throws NamingException {
+		List<Calendario> salida = getCalendarioRepository().getCalendarioByYear(year);
+		List<Calendario> calendario = (List<Calendario>)
+		 getCalendarioRepository().getCalendarioOrdenado();
+		
+		  for ( Calendario calendario2 : salida) { calendario2.getEstado();
+		  RepresentationModel.of(calendario2.getEstado()).add(Link.of("/api/estados/"+calendario2.
+		  getEstado().getId())); }
+		 
 		return salida;
 
 	}
-	
+
 	@CrossOrigin(origins = "*")
 	@GetMapping("/calendarios/{year}/{mes}")
 	public Stream<Calendario> getCalendarioByYearAndMonth(@PathVariable int year, @PathVariable int mes) {
 		Stream<Calendario> salida = getCalendarioRepository().getCalendarioByMonth(year, mes);
-		// List<Calendario> calendario = (List<Calendario>)
-		// getCalendarioRepository().getCalendarioOrdenado();
+		
 
 		return salida;
 
 	}
-	
+
 	@CrossOrigin(origins = "*")
 	@GetMapping("/calendarios/{year}/{mes}/{semana}")
-	public Stream<Calendario> getCalendarioByYearAndMonthAndWeek(@PathVariable int year, @PathVariable int mes, @PathVariable int semana) {
+	public Stream<Calendario> getCalendarioByYearAndMonthAndWeek(@PathVariable int year, @PathVariable int mes,
+			@PathVariable int semana) {
 		Stream<Calendario> salida = getCalendarioRepository().getCalendarioByMonthAndWeek(year, mes, semana);
 		// List<Calendario> calendario = (List<Calendario>)
 		// getCalendarioRepository().getCalendarioOrdenado();
@@ -152,8 +193,6 @@ public class UserController {
 		return salida;
 
 	}
-	
-	
 
 	public EmpleadoRepositoryInterface getEmpleadoRepositoryInterface() {
 		return empleadoRepositoryInterface;
@@ -177,6 +216,14 @@ public class UserController {
 
 	public void setCalendarioRepository(CalendarioRepository calendarioRepository) {
 		this.calendarioRepository = calendarioRepository;
+	}
+
+	public EstadosCrudRepository getEstadosRepository() {
+		return estadosRepository;
+	}
+
+	public void setEstadosRepository(EstadosCrudRepository estadosRepository) {
+		this.estadosRepository = estadosRepository;
 	}
 
 }

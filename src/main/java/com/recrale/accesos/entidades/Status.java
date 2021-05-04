@@ -7,9 +7,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.hateoas.RepresentationModel;
+
 @Entity
 @Table(name="estados")
-public class Status
+public class Status 
 {
 
 	@Id

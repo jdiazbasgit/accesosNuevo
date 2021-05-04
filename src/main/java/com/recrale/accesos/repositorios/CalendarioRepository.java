@@ -27,10 +27,14 @@ public interface CalendarioRepository extends CrudRepository<Calendario, Integer
 			nativeQuery = true)
 	Object[][] getFechaAndEstado(int tipo);
 
-	default Stream<Calendario> getCalendarioByYear(int year) {
+	default List<Calendario> getCalendarioByYear(int year) {
+		List<Calendario> calendarios=getCalendarioOrdenado();
+		for (Calendario calendario : calendarios) {
+			calendario.setDiaSemana(calendario.getFecha().get(Calendar.DAY_OF_WEEK));
+			calendario.setSemanaMes(calendario.getFecha().get(Calendar.WEEK_OF_MONTH));
+		}
 
-		return ((List<Calendario>) getCalendarioOrdenado()).stream()
-				.filter((c) -> c.getFecha().get(Calendar.YEAR) == year);
+		return calendarios;
 	}
 
 	default Stream<Calendario> getCalendarioByMonth(int year, int mes) {

@@ -1,8 +1,6 @@
 package com.recrale.accesos.entidades;
 
 
-import java.sql.Timestamp;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
 import javax.persistence.Column;
@@ -10,16 +8,17 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import javax.persistence.Transient;
-
+import org.hibernate.dialect.MySQL8Dialect;
+import org.springframework.data.rest.core.annotation.RestResource;
+import org.springframework.hateoas.RepresentationModel;
+import org.springframework.hateoas.server.core.Relation;
 @Entity
 @Table(name="calendarios")
-public class Calendario
+@Relation(collectionRelation = "estados")
+public class Calendario extends RepresentationModel<Calendario>
 {
 
 	@Id
@@ -37,6 +36,9 @@ public class Calendario
 	@ManyToOne
 	//@JoinColumn(name="estado_id")
 	private Status estado;
+	
+	
+	
 
 	public int getId()
 	{
