@@ -6,7 +6,4 @@ import org.springframework.stereotype.Repository;
 import cap.curso.accesos.entidades.Jornada;
 
 @Repository
-public interface JornadaRepository extends CrudRepository<Jornada, Integer>
-{
-
-}
+public interface JornadaRepository extends CrudRepository<Jornada, Integer>{}

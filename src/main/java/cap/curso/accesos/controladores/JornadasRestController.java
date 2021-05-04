@@ -1,6 +1,7 @@
 package cap.curso.accesos.controladores;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,18 +31,21 @@ public class JornadasRestController
 	}
 	
 	@GetMapping("/")
+	@CrossOrigin(origins = "*")
 	public Iterable<Jornada> findAll()
 	{
 		return getJornadasService().findAll();
 	}
 
 	@GetMapping("/{id}")
+	@CrossOrigin(origins = "*")
 	public Jornada findById(@PathVariable Integer id)
 	{
 		return getJornadasService().findById(id);
 	}
 	
-	@PostMapping("/nueva-jornada")
+	@PostMapping("/")
+	@CrossOrigin(origins = "*")
 	public Jornada nuevaJornada(@RequestBody Jornada jornada)
 	{
 		return getJornadasService().save(jornada);
