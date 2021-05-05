@@ -9,9 +9,12 @@ import javax.persistence.Table;
 
 import org.springframework.hateoas.RepresentationModel;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreType;
+
 @Entity
 @Table(name="estados")
-public class Status 
+@JsonIgnoreType
+public class Status extends RepresentationModel<Status>
 {
 
 	@Id
