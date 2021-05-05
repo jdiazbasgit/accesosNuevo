@@ -160,8 +160,12 @@ public class UserController {
 	public Resources<Calendario> getCalendarioByYear(@PathVariable int year) throws NamingException {
 		List<Calendario> salida =  getCalendarioRepository().getCalendarioByYear(year);
 		for (Calendario calendario : salida) {
+			
 			calendario.add(linkTo(methodOn(UserController.class).
-					getEstadosById(calendario.getEstado().getId())).withRel("estado").withType("GET"));
+					getEstadosById(calendario.getEstado().getId())).withRel("mi_estado"));
+			
+			calendario.add(linkTo(methodOn(UserController.class).getCalendarioByYear(year)).withSelfRel());
+			
 		}
 		
 		return new Resources<Calendario>(salida,linkTo(methodOn(UserController.class).getCalendarioByYear(year)).withSelfRel().withType("GET"));
