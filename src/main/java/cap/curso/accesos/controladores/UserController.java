@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,6 +26,7 @@ public class UserController {
 
 	@Autowired
 	private UsuarioRepository   usuarioRepository;
+	@CrossOrigin(origins = "*")
 	@PostMapping("user")
 	public Optional<User> login(@RequestParam("user") String  username, @RequestParam("password") String pwd) {
 		

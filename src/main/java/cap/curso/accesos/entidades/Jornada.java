@@ -30,6 +30,12 @@ public class Jornada
 	
 	@Column
 	private String viernes;
+	
+	@Column
+	private String sabado;
+	
+	@Column
+	private String domingo;
 
 	@Column
 	private String descripcion;
@@ -119,5 +125,22 @@ public class Jornada
 	{
 		this.especial = especial;
 	}
+
+	public String getSabado() {
+		return sabado;
+	}
+
+	public void setSabado(String sabado) {
+		this.sabado = sabado;
+	}
+
+	public String getDomingo() {
+		return domingo;
+	}
+
+	public void setDomingo(String domingo) {
+		this.domingo = domingo;
+	}
+	
 
 }
