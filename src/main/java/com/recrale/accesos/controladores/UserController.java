@@ -1,5 +1,8 @@
 package com.recrale.accesos.controladores;
 
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
@@ -8,12 +11,7 @@ import javax.naming.NamingException;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.hateoas.Affordance;
-import org.springframework.hateoas.EntityModel;
-import org.springframework.hateoas.Link;
-import org.springframework.hateoas.RepresentationModel;
-import org.springframework.hateoas.TemplateVariables;
-import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
+import org.springframework.hateoas.Resources;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -23,7 +21,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.util.UriComponents;
 
 import com.recrale.accesos.entidades.Calendario;
 import com.recrale.accesos.entidades.Employee;
@@ -97,7 +94,7 @@ public class UserController {
 
 	@CrossOrigin(origins = "*")
 	@GetMapping("/calendarios")
-	public List<Calendario> getJCalendariosById() {
+	public List<Calendario> getCalendarios() {
 		/*
 		 * List<Calendario> calendarios=(List<Calendario>)
 		 * getCalendarioRepository().findAll();
@@ -124,9 +121,9 @@ public class UserController {
 
 	@CrossOrigin(origins = "*")
 	@GetMapping("/estados/{id}")
-	public Optional<Status> getEstadosById(@PathVariable int  id) {
+	public Status getEstadosById(@PathVariable int  id) {
 		
-		return getEstadosRepository().findById(id);
+		return getEstadosRepository().findById(id).get();
 	}
 
 	@CrossOrigin(origins = "*")
@@ -156,19 +153,18 @@ public class UserController {
 
 		return (List<Jornada>) getJornadaRepository().findAll();
 	}
+	
 
 	@CrossOrigin(origins = "*")
 	@GetMapping("/calendarios/{year}")
-	public List<Calendario> getCalendarioByYear(@PathVariable int year) throws NamingException {
-		List<Calendario> salida = getCalendarioRepository().getCalendarioByYear(year);
-		List<Calendario> calendario = (List<Calendario>)
-		 getCalendarioRepository().getCalendarioOrdenado();
+	public Resources<Calendario> getCalendarioByYear(@PathVariable int year) throws NamingException {
+		List<Calendario> salida =  getCalendarioRepository().getCalendarioByYear(year);
+		for (Calendario calendario : salida) {
+			calendario.add(linkTo(methodOn(UserController.class).
+					getEstadosById(calendario.getEstado().getId())).withRel("estado").withType("GET"));
+		}
 		
-		  for ( Calendario calendario2 : salida) { calendario2.getEstado();
-		  RepresentationModel.of(calendario2.getEstado()).add(Link.of("/api/estados/"+calendario2.
-		  getEstado().getId())); }
-		 
-		return salida;
+		return new Resources<Calendario>(salida,linkTo(methodOn(UserController.class).getCalendarioByYear(year)).withSelfRel().withType("GET"));
 
 	}
 

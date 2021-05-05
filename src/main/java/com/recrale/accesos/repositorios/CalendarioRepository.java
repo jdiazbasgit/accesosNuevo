@@ -1,9 +1,6 @@
 package com.recrale.accesos.repositorios;
 
-import java.lang.reflect.Array;
-import java.time.LocalDate;
 import java.util.Calendar;
-import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -27,6 +24,7 @@ public interface CalendarioRepository extends CrudRepository<Calendario, Integer
 			nativeQuery = true)
 	Object[][] getFechaAndEstado(int tipo);
 
+	
 	default List<Calendario> getCalendarioByYear(int year) {
 		List<Calendario> calendarios=getCalendarioOrdenado();
 		for (Calendario calendario : calendarios) {
@@ -36,7 +34,7 @@ public interface CalendarioRepository extends CrudRepository<Calendario, Integer
 
 		return calendarios;
 	}
-
+	@Query(" from Calendario c")
 	default Stream<Calendario> getCalendarioByMonth(int year, int mes) {
 
 		return ((List<Calendario>) getCalendarioOrdenado()).stream()

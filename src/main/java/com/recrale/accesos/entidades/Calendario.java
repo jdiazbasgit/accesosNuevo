@@ -1,6 +1,7 @@
 package com.recrale.accesos.entidades;
 
 
+import java.beans.Transient;
 import java.util.GregorianCalendar;
 
 import javax.persistence.Column;
@@ -10,27 +11,26 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.persistence.Transient;
-import org.hibernate.dialect.MySQL8Dialect;
-import org.springframework.data.rest.core.annotation.RestResource;
-import org.springframework.hateoas.RepresentationModel;
-import org.springframework.hateoas.server.core.Relation;
+
+import org.springframework.hateoas.ResourceSupport;
 @Entity
 @Table(name="calendarios")
-@Relation(collectionRelation = "estados")
-public class Calendario extends RepresentationModel<Calendario>
+//@Relation(collectionRelation = "estados")
+public class Calendario extends ResourceSupport
 {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	@Column(name="id")
+	private int idCalendario;
 	
 	@Column
 	private GregorianCalendar fecha;
-	@Transient
+	
+	
 	private int diaSemana;
 	
-	@Transient
+	
 	private int semanaMes;
 	
 	@ManyToOne
@@ -40,15 +40,6 @@ public class Calendario extends RepresentationModel<Calendario>
 	
 	
 
-	public int getId()
-	{
-		return id;
-	}
-
-	public void setId(int id)
-	{
-		this.id = id;
-	}
 
 	
 
@@ -61,7 +52,7 @@ public class Calendario extends RepresentationModel<Calendario>
 	{
 		this.estado = estado;
 	}
-
+	@Transient
 	public int getDiaSemana() {
 		return diaSemana;
 	}
@@ -69,7 +60,7 @@ public class Calendario extends RepresentationModel<Calendario>
 	public void setDiaSemana(int diaSemana) {
 		this.diaSemana = diaSemana;
 	}
-
+	@Transient
 	public int getSemanaMes() {
 		return semanaMes;
 	}
@@ -84,6 +75,14 @@ public class Calendario extends RepresentationModel<Calendario>
 
 	public void setFecha(GregorianCalendar fecha) {
 		this.fecha = fecha;
+	}
+
+	public int getIdCalendario() {
+		return idCalendario;
+	}
+
+	public void setIdCalendario(int idCalendario) {
+		this.idCalendario = idCalendario;
 	}
 	
 	
