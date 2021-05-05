@@ -1,7 +1,6 @@
 package com.recrale.accesos.entidades;
 
 
-import java.beans.Transient;
 import java.util.GregorianCalendar;
 
 import javax.persistence.Column;
@@ -11,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.springframework.hateoas.RepresentationModel;
 @Entity
@@ -27,10 +27,10 @@ public class Calendario extends RepresentationModel<Calendario>//exends Resource
 	@Column
 	private GregorianCalendar fecha;
 	
-	
+	@Transient
 	private int diaSemana;
 	
-	
+	@Transient
 	private int semanaMes;
 	
 	@ManyToOne
@@ -52,7 +52,7 @@ public class Calendario extends RepresentationModel<Calendario>//exends Resource
 	{
 		this.estado = estado;
 	}
-	@Transient
+	
 	public int getDiaSemana() {
 		return diaSemana;
 	}
@@ -60,7 +60,7 @@ public class Calendario extends RepresentationModel<Calendario>//exends Resource
 	public void setDiaSemana(int diaSemana) {
 		this.diaSemana = diaSemana;
 	}
-	@Transient
+	
 	public int getSemanaMes() {
 		return semanaMes;
 	}
