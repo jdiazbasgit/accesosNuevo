@@ -1,0 +1,34 @@
+<h1 class="text-center mt-3">Empleados</h1>
+
+<div class="col text-center">
+    <div class="form-check">
+    <input class="form-check-input" type="checkbox" [(ngModel)]="todosEmpleados" (ngModelChange)="filterChange()">
+    <label class="form-check-label">Mostrar todos los empleados</label>
+  </div>
+  <button class="btn btn-primary mx-auto my-3" (click)="open()">Dar de alta</button>
+</div>
+
+<table id="tablaempleados" class="table m-auto">
+  <thead class="thead-dark">
+    <tr>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+      <th>DNI</th>
+      <th>Identificador</th>
+      <th>Fecha alta</th>
+      <th *ngIf="this.todosEmpleados">Fecha baja</th>
+      <th>Modificar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let empleado of empleadosFiltrados">
+      <td>{{ empleado.nombre }}</td>
+      <td>{{ empleado.apellidos }}</td>
+      <td>{{ empleado.dni }}</td>
+      <td>{{ empleado.identificador }}</td>
+      <td>{{ empleado.fecha_alta | date:'dd-MM-yyyy'}}</td>
+      <td *ngIf="this.todosEmpleados">{{ empleado.fecha_baja | date:'dd-MM-yyyy' }}</td>
+      <td><button class="btn btn-outline-primary" (click)="open(empleado)">Modificar</button></td>
+    </tr>
+  </tbody>
+</table>

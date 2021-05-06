@@ -1,0 +1,517 @@
+{
+    "_embedded" : {
+      "employees" : [ {
+        "nombre" : "PATRICIA",
+        "apellidos" : "FERNANDEZ",
+        "dni" : "434543t",
+        "identificador" : "E00401000ED6C7CD",
+        "fecha_alta" : "2014-03-01",
+        "fecha_baja" : null,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/15"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/15"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/15/jornada"
+          }
+        }
+      }, {
+        "nombre" : "ALEJANDRO",
+        "apellidos" : "ALCANTARA",
+        "dni" : "45645k",
+        "identificador" : "e0020449a91b44f61",
+        "fecha_alta" : "2018-03-12",
+        "fecha_baja" : "2019-03-15",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/18"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/18"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/18/jornada"
+          }
+        }
+      }, {
+        "nombre" : "DAVID",
+        "apellidos" : "SAEZ CALVO",
+        "dni" : "576576f",
+        "identificador" : "88C63EE3",
+        "fecha_alta" : "2016-09-01",
+        "fecha_baja" : null,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/19"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/19"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/19/jornada"
+          }
+        }
+      }, {
+        "nombre" : "FRANCISCO",
+        "apellidos" : "MAYORAL SOLARES",
+        "dni" : "5435g",
+        "identificador" : "01000000081da14d",
+        "fecha_alta" : "1995-04-25",
+        "fecha_baja" : null,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/20"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/20"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/20/jornada"
+          }
+        }
+      }, {
+        "nombre" : "AGUSTIN",
+        "apellidos" : "CALVO ATIENZA",
+        "dni" : "90'9'g",
+        "identificador" : "4250afe2",
+        "fecha_alta" : "2000-06-16",
+        "fecha_baja" : null,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/21"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/21"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/21/jornada"
+          }
+        }
+      }, {
+        "nombre" : "JOSE ANTONIO ",
+        "apellidos" : "DIAZ",
+        "dni" : "34232g",
+        "identificador" : "3e2db2f2",
+        "fecha_alta" : "1999-04-21",
+        "fecha_baja" : null,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/22"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/22"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/22/jornada"
+          }
+        }
+      }, {
+        "nombre" : "JUAN",
+        "apellidos" : "GOMEZ HELMO",
+        "dni" : "675l",
+        "identificador" : "425161b2",
+        "fecha_alta" : "1989-11-01",
+        "fecha_baja" : null,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/23"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/23"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/23/jornada"
+          }
+        }
+      }, {
+        "nombre" : "DANIEL",
+        "apellidos" : "MOZDROGAN DUMITRU",
+        "dni" : "456456i",
+        "identificador" : "e0020449a91b44f6",
+        "fecha_alta" : "2019-04-15",
+        "fecha_baja" : null,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/32"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/32"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/32/jornada"
+          }
+        }
+      }, {
+        "nombre" : "SILVIA",
+        "apellidos" : "LLUCH",
+        "dni" : "4348343t",
+        "identificador" : "NF2NR32R2NL",
+        "fecha_alta" : "2021-03-16",
+        "fecha_baja" : null,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/34"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/34"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/34/jornada"
+          }
+        }
+      }, {
+        "nombre" : "PEPA",
+        "apellidos" : "GARCÍA",
+        "dni" : "434357Y",
+        "identificador" : "E00401896ED6C7CD",
+        "fecha_alta" : "2014-03-01",
+        "fecha_baja" : "2021-03-31",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/35"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/35"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/35/jornada"
+          }
+        }
+      }, {
+        "nombre" : "DANIELA",
+        "apellidos" : "ROMERO",
+        "dni" : "249239345Y",
+        "identificador" : "sgvfsg",
+        "fecha_alta" : "2021-03-15",
+        "fecha_baja" : "2021-03-31",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/36"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/36"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/36/jornada"
+          }
+        }
+      }, {
+        "nombre" : "ANTONIO ",
+        "apellidos" : "ROMERO SANCHEZ",
+        "dni" : "120767F",
+        "identificador" : "5500340",
+        "fecha_alta" : "2021-03-01",
+        "fecha_baja" : "2021-03-16",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/37"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/37"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/37/jornada"
+          }
+        }
+      }, {
+        "nombre" : "ROSA",
+        "apellidos" : "FERNANDEZ",
+        "dni" : "1373338A",
+        "identificador" : "781226",
+        "fecha_alta" : "2021-03-16",
+        "fecha_baja" : "2021-03-25",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/38"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/38"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/38/jornada"
+          }
+        }
+      }, {
+        "nombre" : "WILLY",
+        "apellidos" : "CIFRE",
+        "dni" : "1372472328W",
+        "identificador" : "3296172",
+        "fecha_alta" : "2021-03-25",
+        "fecha_baja" : "2021-07-30",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/40"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/40"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/40/jornada"
+          }
+        }
+      }, {
+        "nombre" : "DIEGO",
+        "apellidos" : "GRANDA",
+        "dni" : "57612385285Q",
+        "identificador" : "5026039",
+        "fecha_alta" : "2020-12-01",
+        "fecha_baja" : "2021-12-31",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/41"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/41"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/41/jornada"
+          }
+        }
+      }, {
+        "nombre" : "JAVIER",
+        "apellidos" : "DÍAZ",
+        "dni" : "638423579275J",
+        "identificador" : "5631676",
+        "fecha_alta" : "2021-01-01",
+        "fecha_baja" : "2021-08-27",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/42"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/42"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/42/jornada"
+          }
+        }
+      }, {
+        "nombre" : "ANA",
+        "apellidos" : "QUESADA",
+        "dni" : "12385753F",
+        "identificador" : "55003400",
+        "fecha_alta" : "2021-03-01",
+        "fecha_baja" : "2021-03-16",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/45"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/45"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/45/jornada"
+          }
+        }
+      }, {
+        "nombre" : "SOFÍA",
+        "apellidos" : "SANCHEZ",
+        "dni" : "84756566E",
+        "identificador" : "55003490",
+        "fecha_alta" : "2021-03-01",
+        "fecha_baja" : "2021-03-16",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/48"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/48"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/48/jornada"
+          }
+        }
+      }, {
+        "nombre" : "RAQUEL",
+        "apellidos" : "ROMERO",
+        "dni" : "8848855874F",
+        "identificador" : "550034902",
+        "fecha_alta" : "2021-03-02",
+        "fecha_baja" : "2021-03-16",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/50"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/50"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/50/jornada"
+          }
+        }
+      }, {
+        "nombre" : "AMBROSIO",
+        "apellidos" : "RUPERTO",
+        "dni" : "VR99",
+        "identificador" : "550099",
+        "fecha_alta" : "2021-03-02",
+        "fecha_baja" : "2021-03-26",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/51"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/51"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/51/jornada"
+          }
+        }
+      }, {
+        "nombre" : "PILAR",
+        "apellidos" : "DÍAZ",
+        "dni" : "6725912147X",
+        "identificador" : "3254514",
+        "fecha_alta" : "2021-03-01",
+        "fecha_baja" : "2022-12-31",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/52"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/52"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/52/jornada"
+          }
+        }
+      }, {
+        "nombre" : "ALVARO",
+        "apellidos" : "VILLA",
+        "dni" : "4368372481R",
+        "identificador" : "330085",
+        "fecha_alta" : "2021-03-01",
+        "fecha_baja" : "2021-11-27",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/53"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/53"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/53/jornada"
+          }
+        }
+      }, {
+        "nombre" : "VIVI",
+        "apellidos" : "VEGA",
+        "dni" : "31016779H",
+        "identificador" : "4605851",
+        "fecha_alta" : "2021-03-08",
+        "fecha_baja" : "2021-03-31",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/54"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/54"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/54/jornada"
+          }
+        }
+      }, {
+        "nombre" : "CARLOS ",
+        "apellidos" : "MARCO",
+        "dni" : "43924327G",
+        "identificador" : "3887357",
+        "fecha_alta" : "2021-03-24",
+        "fecha_baja" : "2021-03-30",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/55"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/55"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/55/jornada"
+          }
+        }
+      }, {
+        "nombre" : "ANTONIO",
+        "apellidos" : "ROMERO",
+        "dni" : "1234567R",
+        "identificador" : "337399",
+        "fecha_alta" : "2021-03-17",
+        "fecha_baja" : "2021-03-31",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/56"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/56"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/56/jornada"
+          }
+        }
+      }, {
+        "nombre" : "ANTERO",
+        "apellidos" : "PRIETO",
+        "dni" : "123456745F",
+        "identificador" : "337392349",
+        "fecha_alta" : "2021-03-01",
+        "fecha_baja" : "2021-03-28",
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/59"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/59"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/59/jornada"
+          }
+        }
+      }, {
+        "nombre" : "Juan Carlos",
+        "apellidos" : "Xxxxx",
+        "dni" : "1232374J",
+        "identificador" : "4279457",
+        "fecha_alta" : "2021-03-17",
+        "fecha_baja" : null,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/60"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/60"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/60/jornada"
+          }
+        }
+      }, {
+        "nombre" : "Javier",
+        "apellidos" : "Navas",
+        "dni" : "3438032G",
+        "identificador" : "354135",
+        "fecha_alta" : "2021-03-17",
+        "fecha_baja" : null,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/employees/61"
+          },
+          "employee" : {
+            "href" : "http://188.127.162.129:8080/api/employees/61"
+          },
+          "jornada" : {
+            "href" : "http://188.127.162.129:8080/api/employees/61/jornada"
+          }
+        }
+      } ]
+    },
+    "_links" : {
+      "self" : {
+        "href" : "http://188.127.162.129:8080/api/employees"
+      },
+      "profile" : {
+        "href" : "http://188.127.162.129:8080/api/profile/employees"
+      }
+    }
+  }
