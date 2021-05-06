@@ -70,6 +70,7 @@ export class EmpleadosComponent implements OnInit, DoCheck {
 
     modalRef.result.then(
       (result) => {
+        this.empleados = [];
         this.getEmpleados(this.empleados);
       },
       (reason) => {
