@@ -1,0 +1,391 @@
+{
+    "_embedded" : {
+      "days" : [ {
+        "lunes" : "",
+        "martes" : "",
+        "miercoles" : "",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "A",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/1"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/1"
+          }
+        }
+      }, {
+        "lunes" : "08:15-13:30",
+        "martes" : "08:15-13:30",
+        "miercoles" : "08:15-13:30",
+        "jueves" : "08:15-13:30",
+        "viernes" : "08:15-13:30",
+        "sabado" : "08:15-13:30",
+        "domingo" : "08:15-13:30",
+        "descripcion" : "JornadaReEditada",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/2"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/2"
+          }
+        }
+      }, {
+        "lunes" : "15:30-18:30",
+        "martes" : "15:30-18:30",
+        "miercoles" : "15:30-18:30",
+        "jueves" : "15:30-18:30",
+        "viernes" : "15:30-18:30",
+        "sabado" : "15:30-18:30",
+        "domingo" : "15:30-18:30",
+        "descripcion" : "jornada de tarde",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/3"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/3"
+          }
+        }
+      }, {
+        "lunes" : "09:30-12:30&16:00-18:00",
+        "martes" : "09:30-12:30&16:00-18:00",
+        "miercoles" : "09:30-12:30&16:00-18:00",
+        "jueves" : "09:30-12:30&16:00-18:00",
+        "viernes" : "09:30-14:30",
+        "sabado" : "9:30-12:30&16:00-18:00",
+        "domingo" : "09:30-12:30&16:00-18:00",
+        "descripcion" : "",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/4"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/4"
+          }
+        }
+      }, {
+        "lunes" : "08:15-12:30&15:00-18:30",
+        "martes" : "08:15-12:30&15:00-18:30",
+        "miercoles" : "08:15-12:30&15:00-18:30",
+        "jueves" : "08:15-12:30&15:00-18:30",
+        "viernes" : "08:00-14:30",
+        "sabado" : "08:15-12:30&15:00-18:30",
+        "domingo" : "08:15-12:30&15:00-18:30",
+        "descripcion" : "MEDICO JUAN ",
+        "especial" : 1,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/5"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/5"
+          }
+        }
+      }, {
+        "lunes" : "8:15-12:30&15:00-18:30",
+        "martes" : "09:15-13:30&15:00-18:30",
+        "miercoles" : "09:15-13:30&15:00-18:30",
+        "jueves" : "09:15-13:30&15:00-18:30",
+        "viernes" : "09:15-13:30",
+        "sabado" : "08:15-12:30&15:00-18:30",
+        "domingo" : "08:15-12:30&15:00-18:30",
+        "descripcion" : "MEDICO MAQUI",
+        "especial" : 1,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/6"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/6"
+          }
+        }
+      }, {
+        "lunes" : "ERTE COVID19",
+        "martes" : "ERTE COVID19",
+        "miercoles" : "ERTE COVID19",
+        "jueves" : "ERTE COVID19",
+        "viernes" : "ERTE COVID19",
+        "sabado" : "ERTE COVID19",
+        "domingo" : "ERTE COVID19",
+        "descripcion" : "ERTE COVID19",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/7"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/7"
+          }
+        }
+      }, {
+        "lunes" : "",
+        "martes" : "",
+        "miercoles" : "",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "giergnietrwqvwr4",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/17"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/17"
+          }
+        }
+      }, {
+        "lunes" : "",
+        "martes" : "15:12",
+        "miercoles" : "",
+        "jueves" : "",
+        "viernes" : "15:12",
+        "sabado" : "",
+        "domingo" : "03:12",
+        "descripcion" : "Hola",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/18"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/18"
+          }
+        }
+      }, {
+        "lunes" : "",
+        "martes" : "",
+        "miercoles" : "",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "fewrfew",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/19"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/19"
+          }
+        }
+      }, {
+        "lunes" : "04:32",
+        "martes" : "",
+        "miercoles" : "16:32",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/20"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/20"
+          }
+        }
+      }, {
+        "lunes" : "15:12",
+        "martes" : "15:12",
+        "miercoles" : "03:12-03:12-15:12",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "fdas",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/21"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/21"
+          }
+        }
+      }, {
+        "lunes" : "",
+        "martes" : "",
+        "miercoles" : "",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "Hola",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/22"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/22"
+          }
+        }
+      }, {
+        "lunes" : "03:12",
+        "martes" : "",
+        "miercoles" : "",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "hola",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/23"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/23"
+          }
+        }
+      }, {
+        "lunes" : "",
+        "martes" : "",
+        "miercoles" : "",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "afa",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/24"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/24"
+          }
+        }
+      }, {
+        "lunes" : "15:12",
+        "martes" : "",
+        "miercoles" : "",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/25"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/25"
+          }
+        }
+      }, {
+        "lunes" : "15:12",
+        "martes" : "",
+        "miercoles" : "12:31",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "A",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/26"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/26"
+          }
+        }
+      }, {
+        "lunes" : "04:32-04:32",
+        "martes" : "",
+        "miercoles" : "",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "FWE",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/27"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/27"
+          }
+        }
+      }, {
+        "lunes" : "",
+        "martes" : "",
+        "miercoles" : "",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "DAD",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/28"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/28"
+          }
+        }
+      }, {
+        "lunes" : "",
+        "martes" : "",
+        "miercoles" : "",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "FDASF",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/29"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/29"
+          }
+        }
+      }, {
+        "lunes" : "",
+        "martes" : "",
+        "miercoles" : "",
+        "jueves" : "",
+        "viernes" : "",
+        "sabado" : "",
+        "domingo" : "",
+        "descripcion" : "abcd",
+        "especial" : 0,
+        "_links" : {
+          "self" : {
+            "href" : "http://188.127.162.129:8080/api/days/30"
+          },
+          "day" : {
+            "href" : "http://188.127.162.129:8080/api/days/30"
+          }
+        }
+      } ]
+    },
+    "_links" : {
+      "self" : {
+        "href" : "http://188.127.162.129:8080/api/days"
+      },
+      "profile" : {
+        "href" : "http://188.127.162.129:8080/api/profile/days"
+      }
+    }
+  }
