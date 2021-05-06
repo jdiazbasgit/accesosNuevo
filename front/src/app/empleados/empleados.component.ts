@@ -1,5 +1,5 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
-import { Empleado, ServiceService, Jornada } from '../service.service';
+import { Empleado, EmpleadosServiceService, Jornada } from '../empleadosservice.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormularioEmpleadoComponent } from '../formulario-empleado/formulario-empleado.component';
 
@@ -14,7 +14,7 @@ export class EmpleadosComponent implements OnInit, DoCheck {
   todosEmpleados: boolean = false;
 
   constructor(
-    private service: ServiceService,
+    private service: EmpleadosServiceService,
     private modalService: NgbModal
   ) {}
 

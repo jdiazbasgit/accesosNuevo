@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { Empleado } from '../service.service';
-import { ServiceService } from '../service.service';
+import { Empleado } from '../empleadosservice.service';
+import { EmpleadosServiceService } from '../empleadosservice.service';
 
 @Component({
   selector: 'app-formulario-empleado',
@@ -12,7 +12,7 @@ export class FormularioEmpleadoComponent {
 
   constructor(
     public activeModal: NgbActiveModal,
-    private service: ServiceService
+    private service: EmpleadosServiceService
   ) { }
 
   guardarEmpleado() {

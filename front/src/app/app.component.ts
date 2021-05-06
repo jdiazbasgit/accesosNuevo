@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ServiceService } from "../app/service.service";
+import { EmpleadosServiceService } from "./empleadosservice.service";
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'accesosFront';
 
   constructor(
-    private service: ServiceService
+    private service: EmpleadosServiceService
   ) { }
 
   ngOnInit(): void {

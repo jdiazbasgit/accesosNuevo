@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root',
 })
-export class ServiceService {
+export class EmpleadosServiceService {
   urlJSON: string = './assets/empleadosBBDD.json';
   //urlBBDD: string = 'http://10.68.9.250:80/api/empleados';
   urlBBDD: string = 'http://localhost:80/api/empleados';
