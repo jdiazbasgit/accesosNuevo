@@ -20,6 +20,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 				//.antMatchers(HttpMethod.GET, "/help").permitAll()
 				//.antMatchers(HttpMethod.GET, "/api").permitAll()
 				.anyRequest().authenticated();
+                        http.cors();
 		}
 		
 		

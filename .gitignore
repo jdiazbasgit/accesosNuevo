@@ -1,4 +1,3 @@
-
 target/
 bin/
 !.mvn/wrapper/maven-wrapper.jar
@@ -17,9 +16,11 @@ bin/
 .springBeans
 .sts4-cache
 
+.vscode/
 
-
+=======
+# dependencies
+/node_modules
 
 ### VS Code ###
 .vscode/
-
