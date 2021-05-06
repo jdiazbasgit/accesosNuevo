@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div style="text-align:center; padding-top: 2%;">
+    <button class="btn btn-lg btn-primary mx-auto text-center" (click)="showModal(modalTemplate, 'new')">Nueva
+      jornada</button>
+  </div>
+  <!-- ********** -->
+
+  <ng-template #modalTemplate id="modalTemplate" let-save="close" let-cancel="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Jornadas: {{operation}} jornada</h4>
+    </div>
+    <div class="modal-body">
+      <div>
+        <label for="descripcion" style="margin-right: 1%">Name:</label><input type="text" name="descripcion" id="descripcion">
+        
+        <label for="especial" style="margin-left: 3%; margin-right: 1%">Special:</label><input type="checkbox" name="especial" id="especial">
+
+        <label style="margin-left: 3%; margin-right: 1%;">Turns Quantity:</label>
+        <input type="radio" id="1j" name="jo" value="1" (change)='tableUpdater(1)'>
+        <label style="margin: 5px;" for="1j">1</label>
+        <input type="radio" id="2j" name="jo" value="2" checked (change)='tableUpdater(2)'>
+        <label style="margin: 5px;" for="2j">2</label>
+        <input type="radio" id="3j" name="jo" value="3" (change)='tableUpdater(3)'>
+        <label style="margin: 5px;" for="3j">3</label>
+      </div>
+      <br>
+      <table class="table table-bordered" id="tablaJornada">
+        <thead>
+          <tr>
+            <th>Dias</th>
+            <th>Turno 1</th>
+            <th>Turno 2</th>
+            <th>Turno 3</th>
+          </tr>
+        </thead>
+        <tbody #tablaJornadaBody id="tablaJornadaBody" class="align-items-center">
+        </tbody>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" (click)="save(tablaJornadaBody)">Save</button>
+      <button type="button" class="btn btn-danger" (click)="cancel('cancel')">Cancel</button>
+    </div>
+  </ng-template>
+
+  <!-- ********** -->
+
+  <div id="btnLogout">
+    <button class="btn btn-danger" value="Logout" (click)="logout()">Logout</button>
+  </div>
+ 
+
+  <div class="container">
+    <h2>Jornadas</h2>
+    <table class="table table-bordered" id="tablaJornadas">
+      <thead class="table-dark">
+        <tr>
+          <th class="text-center">Name</th>
+          <th class="text-center">Monday</th>
+          <th class="text-center">Tuesdday</th>
+          <th class="text-center">Wednesday</th>
+          <th class="text-center">Thursday</th>
+          <th class="text-center">Friday</th>
+          <th class="text-center">Saturday</th>
+          <th class="text-center">Sunday</th>
+          <th class="text-center">Special</th>
+          <th class="text-center">Modificar</th>
+        </tr>
+      </thead>
+      <tbody id="filasJornada" class="align-items-center">
+        <tr *ngFor="let jornada of jornadas;index as i" id="fila{{ i }}">
+          <td>{{ jornada.descripcion }}</td>
+          <td>{{ jornada.lunes }}</td>
+          <td>{{ jornada.martes }}</td>
+          <td>{{ jornada.miercoles }}</td>
+          <td>{{ jornada.jueves }}</td>
+          <td>{{ jornada.viernes }}</td>
+          <td>{{ jornada.sabado }}</td>
+          <td>{{ jornada.domingo }}</td>
+          <td>{{ treatSpecial(jornada.especial)}}</td>
+          <td><button class="btn btn-outline-primary" (click)="showModal(modalTemplate,'edit', i)">Modificar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
