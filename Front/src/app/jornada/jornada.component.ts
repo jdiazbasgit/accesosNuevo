@@ -13,9 +13,7 @@ import { Jornada, JornadaDatosService } from '../jornada-datos.service';
 export class JornadaComponent implements AfterViewInit {
 
   @ViewChild('modalTemplate') modalTemplate: TemplateRef<any>;
-
   token;
-
   logoutText;
   descripcionValue;
   specialValue;
@@ -24,21 +22,16 @@ export class JornadaComponent implements AfterViewInit {
   operation: string = "Nueva";
   service: any;
   weekArray = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo'];
-  //url: string = "http://10.68.9.250/api/jornadas/";
-  url: string = "http://localhost/api/jornadas/";
+  url: string = "http://localhost:80/api/jornadas/";
   jornadas: Jornada[] = [];
 
   constructor(service: JornadaDatosService, config: NgbModalConfig, private modal: NgbModal, private router: Router) {
     this.token = sessionStorage.getItem("token");
 
-
-
     if (this.token == null) {
-
       this.router.navigate(["login"]);
       this.logoutText = `Logout: ${sessionStorage.getItem("user")}`;
     }
-
 
     this.service = service;
     config.backdrop = 'static';
@@ -47,7 +40,6 @@ export class JornadaComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.getJornadas(this.jornadas);
-    //this.showJornada();
   }
 
   getJornadas(jornadas: Jornada[]) {
@@ -147,14 +139,15 @@ export class JornadaComponent implements AfterViewInit {
     this.operation = operation;
     if (operation == 'edit') {
 
-      this.service.getDatos(this.url + this.jornadas[id].id).then((datos: any) => {
+      this.service.getDatos(this.url + this.jornadas[id].id, sessionStorage.getItem("token")).then((datos: any) => {
         let i;
         let max = 1;
         let myEspecial = (<HTMLInputElement>document.getElementById("especial"));
         (<HTMLInputElement>document.getElementById("descripcion")).value = datos['descripcion'];
         myEspecial.checked = true;
 
-        if (datos['especial'] == 0) {
+        if (datos['especial'] == 0) 
+        {
           myEspecial.checked = false;
         }
 
@@ -175,7 +168,8 @@ export class JornadaComponent implements AfterViewInit {
       })
     } else {
       let i;
-      for (i = 0; i < 7; i++) {
+      for (i = 0; i < 7; i++) 
+      {
         tbody.appendChild(this.rowGenerator(i));
       }
     }
@@ -229,7 +223,6 @@ export class JornadaComponent implements AfterViewInit {
       this.specialValue = 0;
     }
 
-
     for (i; i < index; i += 2) {
       day = "";
       day = day + turns[i] + "-";
@@ -254,21 +247,19 @@ export class JornadaComponent implements AfterViewInit {
 
     else {
       myJornada = new Jornada(this.jornadas[id].id, days[0], days[1], days[2], days[3], days[4], days[5], days[6], this.descripcionValue, this.specialValue);
-      console.log(this.descripcionValue);
-      console.log(this.specialValue);
+    
     }
     return myJornada;
   }
 
-  saveDays(jornada) {
+  saveDays(jornada) {  
     fetch(this.url, {
       method: 'POST',
       headers: {
+        'Authorization': sessionStorage.getItem("token"),
         'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        'Authorization': this.token
+        'Content-Type': 'application/json'
       },
-      mode: "no-cors",
       body: JSON.stringify(jornada)
     })
       .then(() => {
@@ -279,9 +270,9 @@ export class JornadaComponent implements AfterViewInit {
       });
   }
 
-  logout():void{
+  logout(): void {
     sessionStorage.clear();
-    this.logoutText="";
+    this.logoutText = "";
     this.router.navigate(["login"]);
   }
 

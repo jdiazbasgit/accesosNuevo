@@ -38,27 +38,11 @@ export class LoginComponentComponent implements OnInit {
       method: 'POST'
     }).then(data => data.json()).then(response => {
           this.authentication = response;
-
           sessionStorage.setItem("username", this.authentication.user);
           sessionStorage.setItem("token", this.authentication.token);
           sessionStorage.setItem("rol", this.authentication.rol);
-
           this.router.navigate(["jornadas"]);
         });
-
-    // fetch(`${this.authUrl}?user=${user}&&password=${password}`, {
-      // method: 'POST',
-      // }).then(response => response.json()).then((data) => resolve(data))
-    // }).then((data)=>{
-      // console.log(data);
-     //});
-
-    // fetch(`${this.authUrl}?user=${user}&&password=${password}`,{
-    //   method: 'POST',
-    // }).then(response => response.json()).then(data => {
-    //   console.log(data);
-    // });
-
   }
 
 }
