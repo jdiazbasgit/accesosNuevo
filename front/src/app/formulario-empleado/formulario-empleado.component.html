@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="modal-header">
+    <h5 class="modal-title">Datos empleado</h5>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <form class="form m-auto" #f="ngForm" (ngSubmit)="guardarEmpleado()">
+
+    <label class="col">Nombre:</label>
+    <input class="col form-control" id="nombre" [(ngModel)]="empleado.nombre" name="nombre" required>
+
+    <label class="col">Apellidos:</label>
+    <input class="col form-control" id="apellidos" [(ngModel)]="empleado.apellidos" name="apellidos" required>
+
+    <label class="col">DNI:</label>
+    <input class="col form-control" id="dni" [(ngModel)]="empleado.dni" name="dni" required>
+
+    <label class="col">Identificador:</label>
+    <input class="col form-control" id="identificador"  [(ngModel)]="empleado.identificador" name="identificador"required>
+
+    <label class="col">Fecha alta:</label>
+    <input type="date" class="col form-control " id="fecha_alta" [(ngModel)]="empleado.fecha_alta" name="fecha_alta" required>
+
+    <label class="col">Fecha baja:</label>
+    <input type="date" class="col form-control" id="fecha_baja" [(ngModel)]="empleado.fecha_baja" name="fecha_baja">
+    <br>
+
+    <div class="col"><button class="btn btn-success col" type="submit" [disabled]="f.invalid">Confirmar</button></div>
+    <br>
+  </form>
+</div>

@@ -1,9 +1,11 @@
-HELP.md
 target/
 bin/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+# dependencies
+/node_modules
 
 ### STS ###
 .apt_generated
@@ -14,23 +16,11 @@ bin/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+.vscode/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+=======
+# dependencies
+/node_modules
 
 ### VS Code ###
 .vscode/
-
-pom.xml

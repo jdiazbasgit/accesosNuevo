@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'accesosFront';
+
+  constructor(
+   
+  ) { }
+
+  ngOnInit(): void {
+    
+    
+  }
+
+
 }
