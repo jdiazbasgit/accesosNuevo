@@ -1,0 +1,4017 @@
+[
+    {
+        "id": 92033,
+        "fecha": "2021-01-01",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92034,
+        "fecha": "2021-01-02",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92035,
+        "fecha": "2021-01-03",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92036,
+        "fecha": "2021-01-04",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 1
+    },
+    {
+        "id": 92037,
+        "fecha": "2021-01-05",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 1
+    },
+    {
+        "id": 92038,
+        "fecha": "2021-01-06",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 1
+    },
+    {
+        "id": 92039,
+        "fecha": "2021-01-07",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 1
+    },
+    {
+        "id": 92040,
+        "fecha": "2021-01-08",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92041,
+        "fecha": "2021-01-09",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92042,
+        "fecha": "2021-01-10",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92043,
+        "fecha": "2021-01-11",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 2
+    },
+    {
+        "id": 92044,
+        "fecha": "2021-01-12",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 2
+    },
+    {
+        "id": 92045,
+        "fecha": "2021-01-13",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 2
+    },
+    {
+        "id": 92046,
+        "fecha": "2021-01-14",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 2
+    },
+    {
+        "id": 92047,
+        "fecha": "2021-01-15",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 2
+    },
+    {
+        "id": 92048,
+        "fecha": "2021-01-16",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 2
+    },
+    {
+        "id": 92049,
+        "fecha": "2021-01-17",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 2
+    },
+    {
+        "id": 92050,
+        "fecha": "2021-01-18",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 3
+    },
+    {
+        "id": 92051,
+        "fecha": "2021-01-19",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 3
+    },
+    {
+        "id": 92052,
+        "fecha": "2021-01-20",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 3
+    },
+    {
+        "id": 92053,
+        "fecha": "2021-01-21",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 3
+    },
+    {
+        "id": 92054,
+        "fecha": "2021-01-22",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 3
+    },
+    {
+        "id": 92055,
+        "fecha": "2021-01-23",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 3
+    },
+    {
+        "id": 92056,
+        "fecha": "2021-01-24",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 3
+    },
+    {
+        "id": 92057,
+        "fecha": "2021-01-25",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 4
+    },
+    {
+        "id": 92058,
+        "fecha": "2021-01-26",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 4
+    },
+    {
+        "id": 92059,
+        "fecha": "2021-01-27",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 4
+    },
+    {
+        "id": 92060,
+        "fecha": "2021-01-28",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 4
+    },
+    {
+        "id": 92061,
+        "fecha": "2021-01-29",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 4
+    },
+    {
+        "id": 92062,
+        "fecha": "2021-01-30",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 4
+    },
+    {
+        "id": 92063,
+        "fecha": "2021-01-31",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 4
+    },
+    {
+        "id": 92064,
+        "fecha": "2021-02-01",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 1
+    },
+    {
+        "id": 92065,
+        "fecha": "2021-02-02",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 1
+    },
+    {
+        "id": 92066,
+        "fecha": "2021-02-03",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 1
+    },
+    {
+        "id": 92067,
+        "fecha": "2021-02-04",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 1
+    },
+    {
+        "id": 92068,
+        "fecha": "2021-02-05",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92069,
+        "fecha": "2021-02-06",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92070,
+        "fecha": "2021-02-07",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92071,
+        "fecha": "2021-02-08",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 2
+    },
+    {
+        "id": 92072,
+        "fecha": "2021-02-09",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 2
+    },
+    {
+        "id": 92073,
+        "fecha": "2021-02-10",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 2
+    },
+    {
+        "id": 92074,
+        "fecha": "2021-02-11",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 2
+    },
+    {
+        "id": 92075,
+        "fecha": "2021-02-12",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 2
+    },
+    {
+        "id": 92076,
+        "fecha": "2021-02-13",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 2
+    },
+    {
+        "id": 92077,
+        "fecha": "2021-02-14",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 2
+    },
+    {
+        "id": 92078,
+        "fecha": "2021-02-15",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 3
+    },
+    {
+        "id": 92079,
+        "fecha": "2021-02-16",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 3
+    },
+    {
+        "id": 92080,
+        "fecha": "2021-02-17",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 3
+    },
+    {
+        "id": 92081,
+        "fecha": "2021-02-18",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 3
+    },
+    {
+        "id": 92082,
+        "fecha": "2021-02-19",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 3
+    },
+    {
+        "id": 92083,
+        "fecha": "2021-02-20",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 3
+    },
+    {
+        "id": 92084,
+        "fecha": "2021-02-21",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 3
+    },
+    {
+        "id": 92085,
+        "fecha": "2021-02-22",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 4
+    },
+    {
+        "id": 92086,
+        "fecha": "2021-02-23",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 4
+    },
+    {
+        "id": 92087,
+        "fecha": "2021-02-24",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 4
+    },
+    {
+        "id": 92088,
+        "fecha": "2021-02-25",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 4
+    },
+    {
+        "id": 92089,
+        "fecha": "2021-02-26",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 4
+    },
+    {
+        "id": 92090,
+        "fecha": "2021-02-27",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 4
+    },
+    {
+        "id": 92091,
+        "fecha": "2021-02-28",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 4
+    },
+    {
+        "id": 92092,
+        "fecha": "2021-03-01",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 1
+    },
+    {
+        "id": 92093,
+        "fecha": "2021-03-02",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 1
+    },
+    {
+        "id": 92094,
+        "fecha": "2021-03-03",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 1
+    },
+    {
+        "id": 92095,
+        "fecha": "2021-03-04",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 1
+    },
+    {
+        "id": 92096,
+        "fecha": "2021-03-05",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92097,
+        "fecha": "2021-03-06",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92098,
+        "fecha": "2021-03-07",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92099,
+        "fecha": "2021-03-08",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 2
+    },
+    {
+        "id": 92100,
+        "fecha": "2021-03-09",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 2
+    },
+    {
+        "id": 92101,
+        "fecha": "2021-03-10",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 2
+    },
+    {
+        "id": 92102,
+        "fecha": "2021-03-11",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 2
+    },
+    {
+        "id": 92103,
+        "fecha": "2021-03-12",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 2
+    },
+    {
+        "id": 92104,
+        "fecha": "2021-03-13",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 2
+    },
+    {
+        "id": 92105,
+        "fecha": "2021-03-14",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 2
+    },
+    {
+        "id": 92106,
+        "fecha": "2021-03-15",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 3
+    },
+    {
+        "id": 92107,
+        "fecha": "2021-03-16",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 3
+    },
+    {
+        "id": 92108,
+        "fecha": "2021-03-17",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 3
+    },
+    {
+        "id": 92109,
+        "fecha": "2021-03-18",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 3
+    },
+    {
+        "id": 92110,
+        "fecha": "2021-03-19",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 3
+    },
+    {
+        "id": 92111,
+        "fecha": "2021-03-20",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 3
+    },
+    {
+        "id": 92112,
+        "fecha": "2021-03-21",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 3
+    },
+    {
+        "id": 92113,
+        "fecha": "2021-03-22",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 4
+    },
+    {
+        "id": 92114,
+        "fecha": "2021-03-23",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 4
+    },
+    {
+        "id": 92115,
+        "fecha": "2021-03-24",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 4
+    },
+    {
+        "id": 92116,
+        "fecha": "2021-03-25",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 4
+    },
+    {
+        "id": 92117,
+        "fecha": "2021-03-26",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 4
+    },
+    {
+        "id": 92118,
+        "fecha": "2021-03-27",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 4
+    },
+    {
+        "id": 92119,
+        "fecha": "2021-03-28",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 4
+    },
+    {
+        "id": 92120,
+        "fecha": "2021-03-29",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 5
+    },
+    {
+        "id": 92121,
+        "fecha": "2021-03-30",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 5
+    },
+    {
+        "id": 92122,
+        "fecha": "2021-03-31",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 5
+    },
+    {
+        "id": 92123,
+        "fecha": "2021-04-01",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 1
+    },
+    {
+        "id": 92124,
+        "fecha": "2021-04-02",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92125,
+        "fecha": "2021-04-03",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92126,
+        "fecha": "2021-04-04",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92127,
+        "fecha": "2021-04-05",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 2
+    },
+    {
+        "id": 92128,
+        "fecha": "2021-04-06",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 2
+    },
+    {
+        "id": 92129,
+        "fecha": "2021-04-07",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 2
+    },
+    {
+        "id": 92130,
+        "fecha": "2021-04-08",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 2
+    },
+    {
+        "id": 92131,
+        "fecha": "2021-04-09",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 2
+    },
+    {
+        "id": 92132,
+        "fecha": "2021-04-10",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 2
+    },
+    {
+        "id": 92133,
+        "fecha": "2021-04-11",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 2
+    },
+    {
+        "id": 92134,
+        "fecha": "2021-04-12",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 3
+    },
+    {
+        "id": 92135,
+        "fecha": "2021-04-13",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 3
+    },
+    {
+        "id": 92136,
+        "fecha": "2021-04-14",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 3
+    },
+    {
+        "id": 92137,
+        "fecha": "2021-04-15",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 3
+    },
+    {
+        "id": 92138,
+        "fecha": "2021-04-16",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 3
+    },
+    {
+        "id": 92139,
+        "fecha": "2021-04-17",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 3
+    },
+    {
+        "id": 92140,
+        "fecha": "2021-04-18",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 3
+    },
+    {
+        "id": 92141,
+        "fecha": "2021-04-19",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 4
+    },
+    {
+        "id": 92142,
+        "fecha": "2021-04-20",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 4
+    },
+    {
+        "id": 92143,
+        "fecha": "2021-04-21",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 4
+    },
+    {
+        "id": 92144,
+        "fecha": "2021-04-22",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 4
+    },
+    {
+        "id": 92145,
+        "fecha": "2021-04-23",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 4
+    },
+    {
+        "id": 92146,
+        "fecha": "2021-04-24",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 4
+    },
+    {
+        "id": 92147,
+        "fecha": "2021-04-25",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 4
+    },
+    {
+        "id": 92148,
+        "fecha": "2021-04-26",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 5
+    },
+    {
+        "id": 92149,
+        "fecha": "2021-04-27",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 5
+    },
+    {
+        "id": 92150,
+        "fecha": "2021-04-28",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 5
+    },
+    {
+        "id": 92151,
+        "fecha": "2021-04-29",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 5
+    },
+    {
+        "id": 92152,
+        "fecha": "2021-04-30",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 5
+    },
+    {
+        "id": 92153,
+        "fecha": "2021-05-01",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92154,
+        "fecha": "2021-05-02",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92155,
+        "fecha": "2021-05-03",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 1
+    },
+    {
+        "id": 92156,
+        "fecha": "2021-05-04",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 1
+    },
+    {
+        "id": 92157,
+        "fecha": "2021-05-05",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 1
+    },
+    {
+        "id": 92158,
+        "fecha": "2021-05-06",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 1
+    },
+    {
+        "id": 92159,
+        "fecha": "2021-05-07",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92160,
+        "fecha": "2021-05-08",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92161,
+        "fecha": "2021-05-09",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92162,
+        "fecha": "2021-05-10",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 2
+    },
+    {
+        "id": 92163,
+        "fecha": "2021-05-11",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 2
+    },
+    {
+        "id": 92164,
+        "fecha": "2021-05-12",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 2
+    },
+    {
+        "id": 92165,
+        "fecha": "2021-05-13",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 2
+    },
+    {
+        "id": 92166,
+        "fecha": "2021-05-14",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 2
+    },
+    {
+        "id": 92167,
+        "fecha": "2021-05-15",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 2
+    },
+    {
+        "id": 92168,
+        "fecha": "2021-05-16",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 2
+    },
+    {
+        "id": 92169,
+        "fecha": "2021-05-17",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 3
+    },
+    {
+        "id": 92170,
+        "fecha": "2021-05-18",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 3
+    },
+    {
+        "id": 92171,
+        "fecha": "2021-05-19",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 3
+    },
+    {
+        "id": 92172,
+        "fecha": "2021-05-20",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 3
+    },
+    {
+        "id": 92173,
+        "fecha": "2021-05-21",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 3
+    },
+    {
+        "id": 92174,
+        "fecha": "2021-05-22",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 3
+    },
+    {
+        "id": 92175,
+        "fecha": "2021-05-23",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 3
+    },
+    {
+        "id": 92176,
+        "fecha": "2021-05-24",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 4
+    },
+    {
+        "id": 92177,
+        "fecha": "2021-05-25",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 4
+    },
+    {
+        "id": 92178,
+        "fecha": "2021-05-26",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 4
+    },
+    {
+        "id": 92179,
+        "fecha": "2021-05-27",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 4
+    },
+    {
+        "id": 92180,
+        "fecha": "2021-05-28",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 4
+    },
+    {
+        "id": 92181,
+        "fecha": "2021-05-29",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 4
+    },
+    {
+        "id": 92182,
+        "fecha": "2021-05-30",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 4
+    },
+    {
+        "id": 92183,
+        "fecha": "2021-05-31",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 5
+    },
+    {
+        "id": 92184,
+        "fecha": "2021-06-01",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 1
+    },
+    {
+        "id": 92185,
+        "fecha": "2021-06-02",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 1
+    },
+    {
+        "id": 92186,
+        "fecha": "2021-06-03",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 1
+    },
+    {
+        "id": 92187,
+        "fecha": "2021-06-04",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92188,
+        "fecha": "2021-06-05",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92189,
+        "fecha": "2021-06-06",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92190,
+        "fecha": "2021-06-07",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 2
+    },
+    {
+        "id": 92191,
+        "fecha": "2021-06-08",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 2
+    },
+    {
+        "id": 92192,
+        "fecha": "2021-06-09",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 2
+    },
+    {
+        "id": 92193,
+        "fecha": "2021-06-10",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 2
+    },
+    {
+        "id": 92194,
+        "fecha": "2021-06-11",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 2
+    },
+    {
+        "id": 92195,
+        "fecha": "2021-06-12",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 2
+    },
+    {
+        "id": 92196,
+        "fecha": "2021-06-13",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 2
+    },
+    {
+        "id": 92197,
+        "fecha": "2021-06-14",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 3
+    },
+    {
+        "id": 92198,
+        "fecha": "2021-06-15",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 3
+    },
+    {
+        "id": 92199,
+        "fecha": "2021-06-16",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 3
+    },
+    {
+        "id": 92200,
+        "fecha": "2021-06-17",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 3
+    },
+    {
+        "id": 92201,
+        "fecha": "2021-06-18",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 3
+    },
+    {
+        "id": 92202,
+        "fecha": "2021-06-19",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 3
+    },
+    {
+        "id": 92203,
+        "fecha": "2021-06-20",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 3
+    },
+    {
+        "id": 92204,
+        "fecha": "2021-06-21",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 4
+    },
+    {
+        "id": 92205,
+        "fecha": "2021-06-22",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 4
+    },
+    {
+        "id": 92206,
+        "fecha": "2021-06-23",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 4
+    },
+    {
+        "id": 92207,
+        "fecha": "2021-06-24",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 4
+    },
+    {
+        "id": 92208,
+        "fecha": "2021-06-25",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 4
+    },
+    {
+        "id": 92209,
+        "fecha": "2021-06-26",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 4
+    },
+    {
+        "id": 92210,
+        "fecha": "2021-06-27",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 4
+    },
+    {
+        "id": 92211,
+        "fecha": "2021-06-28",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 5
+    },
+    {
+        "id": 92212,
+        "fecha": "2021-06-29",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 5
+    },
+    {
+        "id": 92213,
+        "fecha": "2021-06-30",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 5
+    },
+    {
+        "id": 92214,
+        "fecha": "2021-07-01",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 1
+    },
+    {
+        "id": 92215,
+        "fecha": "2021-07-02",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92216,
+        "fecha": "2021-07-03",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92217,
+        "fecha": "2021-07-04",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92218,
+        "fecha": "2021-07-05",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 2
+    },
+    {
+        "id": 92219,
+        "fecha": "2021-07-06",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 2
+    },
+    {
+        "id": 92220,
+        "fecha": "2021-07-07",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 2
+    },
+    {
+        "id": 92221,
+        "fecha": "2021-07-08",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 2
+    },
+    {
+        "id": 92222,
+        "fecha": "2021-07-09",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 2
+    },
+    {
+        "id": 92223,
+        "fecha": "2021-07-10",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 2
+    },
+    {
+        "id": 92224,
+        "fecha": "2021-07-11",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 2
+    },
+    {
+        "id": 92225,
+        "fecha": "2021-07-12",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 3
+    },
+    {
+        "id": 92226,
+        "fecha": "2021-07-13",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 3
+    },
+    {
+        "id": 92227,
+        "fecha": "2021-07-14",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 3
+    },
+    {
+        "id": 92228,
+        "fecha": "2021-07-15",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 3
+    },
+    {
+        "id": 92229,
+        "fecha": "2021-07-16",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 3
+    },
+    {
+        "id": 92230,
+        "fecha": "2021-07-17",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 3
+    },
+    {
+        "id": 92231,
+        "fecha": "2021-07-18",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 3
+    },
+    {
+        "id": 92232,
+        "fecha": "2021-07-19",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 4
+    },
+    {
+        "id": 92233,
+        "fecha": "2021-07-20",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 4
+    },
+    {
+        "id": 92234,
+        "fecha": "2021-07-21",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 4
+    },
+    {
+        "id": 92235,
+        "fecha": "2021-07-22",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 4
+    },
+    {
+        "id": 92236,
+        "fecha": "2021-07-23",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 4
+    },
+    {
+        "id": 92237,
+        "fecha": "2021-07-24",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 4
+    },
+    {
+        "id": 92238,
+        "fecha": "2021-07-25",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 4
+    },
+    {
+        "id": 92239,
+        "fecha": "2021-07-26",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 5
+    },
+    {
+        "id": 92240,
+        "fecha": "2021-07-27",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 5
+    },
+    {
+        "id": 92241,
+        "fecha": "2021-07-28",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 5
+    },
+    {
+        "id": 92242,
+        "fecha": "2021-07-29",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 5
+    },
+    {
+        "id": 92243,
+        "fecha": "2021-07-30",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 5
+    },
+    {
+        "id": 92244,
+        "fecha": "2021-07-31",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 5
+    },
+    {
+        "id": 92245,
+        "fecha": "2021-08-01",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92246,
+        "fecha": "2021-08-02",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 1
+    },
+    {
+        "id": 92247,
+        "fecha": "2021-08-03",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 1
+    },
+    {
+        "id": 92248,
+        "fecha": "2021-08-04",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 1
+    },
+    {
+        "id": 92249,
+        "fecha": "2021-08-05",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 1
+    },
+    {
+        "id": 92250,
+        "fecha": "2021-08-06",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92251,
+        "fecha": "2021-08-07",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92252,
+        "fecha": "2021-08-08",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92253,
+        "fecha": "2021-08-09",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 2
+    },
+    {
+        "id": 92254,
+        "fecha": "2021-08-10",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 2
+    },
+    {
+        "id": 92255,
+        "fecha": "2021-08-11",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 2
+    },
+    {
+        "id": 92256,
+        "fecha": "2021-08-12",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 2
+    },
+    {
+        "id": 92257,
+        "fecha": "2021-08-13",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 2
+    },
+    {
+        "id": 92258,
+        "fecha": "2021-08-14",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 2
+    },
+    {
+        "id": 92259,
+        "fecha": "2021-08-15",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 2
+    },
+    {
+        "id": 92260,
+        "fecha": "2021-08-16",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 3
+    },
+    {
+        "id": 92261,
+        "fecha": "2021-08-17",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 3
+    },
+    {
+        "id": 92262,
+        "fecha": "2021-08-18",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 3
+    },
+    {
+        "id": 92263,
+        "fecha": "2021-08-19",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 3
+    },
+    {
+        "id": 92264,
+        "fecha": "2021-08-20",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 3
+    },
+    {
+        "id": 92265,
+        "fecha": "2021-08-21",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 3
+    },
+    {
+        "id": 92266,
+        "fecha": "2021-08-22",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 3
+    },
+    {
+        "id": 92267,
+        "fecha": "2021-08-23",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 4
+    },
+    {
+        "id": 92268,
+        "fecha": "2021-08-24",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 4
+    },
+    {
+        "id": 92269,
+        "fecha": "2021-08-25",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 4
+    },
+    {
+        "id": 92270,
+        "fecha": "2021-08-26",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 4
+    },
+    {
+        "id": 92271,
+        "fecha": "2021-08-27",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 4
+    },
+    {
+        "id": 92272,
+        "fecha": "2021-08-28",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 4
+    },
+    {
+        "id": 92273,
+        "fecha": "2021-08-29",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 4
+    },
+    {
+        "id": 92274,
+        "fecha": "2021-08-30",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 5
+    },
+    {
+        "id": 92275,
+        "fecha": "2021-08-31",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 5
+    },
+    {
+        "id": 92276,
+        "fecha": "2021-09-01",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 1
+    },
+    {
+        "id": 92277,
+        "fecha": "2021-09-02",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 1
+    },
+    {
+        "id": 92278,
+        "fecha": "2021-09-03",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92279,
+        "fecha": "2021-09-04",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92280,
+        "fecha": "2021-09-05",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92281,
+        "fecha": "2021-09-06",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 2
+    },
+    {
+        "id": 92282,
+        "fecha": "2021-09-07",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 2
+    },
+    {
+        "id": 92283,
+        "fecha": "2021-09-08",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 2
+    },
+    {
+        "id": 92284,
+        "fecha": "2021-09-09",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 2
+    },
+    {
+        "id": 92285,
+        "fecha": "2021-09-10",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 2
+    },
+    {
+        "id": 92286,
+        "fecha": "2021-09-11",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 2
+    },
+    {
+        "id": 92287,
+        "fecha": "2021-09-12",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 2
+    },
+    {
+        "id": 92288,
+        "fecha": "2021-09-13",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 3
+    },
+    {
+        "id": 92289,
+        "fecha": "2021-09-14",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 3
+    },
+    {
+        "id": 92290,
+        "fecha": "2021-09-15",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 3
+    },
+    {
+        "id": 92291,
+        "fecha": "2021-09-16",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 3
+    },
+    {
+        "id": 92292,
+        "fecha": "2021-09-17",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 3
+    },
+    {
+        "id": 92293,
+        "fecha": "2021-09-18",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 3
+    },
+    {
+        "id": 92294,
+        "fecha": "2021-09-19",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 3
+    },
+    {
+        "id": 92295,
+        "fecha": "2021-09-20",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 4
+    },
+    {
+        "id": 92296,
+        "fecha": "2021-09-21",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 4
+    },
+    {
+        "id": 92297,
+        "fecha": "2021-09-22",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 4
+    },
+    {
+        "id": 92298,
+        "fecha": "2021-09-23",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 4
+    },
+    {
+        "id": 92299,
+        "fecha": "2021-09-24",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 4
+    },
+    {
+        "id": 92300,
+        "fecha": "2021-09-25",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 4
+    },
+    {
+        "id": 92301,
+        "fecha": "2021-09-26",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 4
+    },
+    {
+        "id": 92302,
+        "fecha": "2021-09-27",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 5
+    },
+    {
+        "id": 92303,
+        "fecha": "2021-09-28",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 5
+    },
+    {
+        "id": 92304,
+        "fecha": "2021-09-29",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 5
+    },
+    {
+        "id": 92305,
+        "fecha": "2021-09-30",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 5
+    },
+    {
+        "id": 92306,
+        "fecha": "2021-10-01",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92307,
+        "fecha": "2021-10-02",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92308,
+        "fecha": "2021-10-03",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92309,
+        "fecha": "2021-10-04",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 1
+    },
+    {
+        "id": 92310,
+        "fecha": "2021-10-05",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 1
+    },
+    {
+        "id": 92311,
+        "fecha": "2021-10-06",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 1
+    },
+    {
+        "id": 92312,
+        "fecha": "2021-10-07",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 1
+    },
+    {
+        "id": 92313,
+        "fecha": "2021-10-08",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92314,
+        "fecha": "2021-10-09",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92315,
+        "fecha": "2021-10-10",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92316,
+        "fecha": "2021-10-11",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 2
+    },
+    {
+        "id": 92317,
+        "fecha": "2021-10-12",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 2
+    },
+    {
+        "id": 92318,
+        "fecha": "2021-10-13",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 2
+    },
+    {
+        "id": 92319,
+        "fecha": "2021-10-14",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 2
+    },
+    {
+        "id": 92320,
+        "fecha": "2021-10-15",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 2
+    },
+    {
+        "id": 92321,
+        "fecha": "2021-10-16",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 2
+    },
+    {
+        "id": 92322,
+        "fecha": "2021-10-17",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 2
+    },
+    {
+        "id": 92323,
+        "fecha": "2021-10-18",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 3
+    },
+    {
+        "id": 92324,
+        "fecha": "2021-10-19",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 3
+    },
+    {
+        "id": 92325,
+        "fecha": "2021-10-20",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 3
+    },
+    {
+        "id": 92326,
+        "fecha": "2021-10-21",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 3
+    },
+    {
+        "id": 92327,
+        "fecha": "2021-10-22",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 3
+    },
+    {
+        "id": 92328,
+        "fecha": "2021-10-23",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 3
+    },
+    {
+        "id": 92329,
+        "fecha": "2021-10-24",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 3
+    },
+    {
+        "id": 92330,
+        "fecha": "2021-10-25",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 4
+    },
+    {
+        "id": 92331,
+        "fecha": "2021-10-26",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 4
+    },
+    {
+        "id": 92332,
+        "fecha": "2021-10-27",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 4
+    },
+    {
+        "id": 92333,
+        "fecha": "2021-10-28",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 4
+    },
+    {
+        "id": 92334,
+        "fecha": "2021-10-29",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 4
+    },
+    {
+        "id": 92335,
+        "fecha": "2021-10-30",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 4
+    },
+    {
+        "id": 92336,
+        "fecha": "2021-10-31",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 4
+    },
+    {
+        "id": 92337,
+        "fecha": "2021-11-01",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 1
+    },
+    {
+        "id": 92338,
+        "fecha": "2021-11-02",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 1
+    },
+    {
+        "id": 92339,
+        "fecha": "2021-11-03",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 1
+    },
+    {
+        "id": 92340,
+        "fecha": "2021-11-04",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 1
+    },
+    {
+        "id": 92341,
+        "fecha": "2021-11-05",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92342,
+        "fecha": "2021-11-06",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92343,
+        "fecha": "2021-11-07",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92344,
+        "fecha": "2021-11-08",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 2
+    },
+    {
+        "id": 92345,
+        "fecha": "2021-11-09",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 2
+    },
+    {
+        "id": 92346,
+        "fecha": "2021-11-10",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 2
+    },
+    {
+        "id": 92347,
+        "fecha": "2021-11-11",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 2
+    },
+    {
+        "id": 92348,
+        "fecha": "2021-11-12",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 2
+    },
+    {
+        "id": 92349,
+        "fecha": "2021-11-13",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 2
+    },
+    {
+        "id": 92350,
+        "fecha": "2021-11-14",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 2
+    },
+    {
+        "id": 92351,
+        "fecha": "2021-11-15",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 3
+    },
+    {
+        "id": 92352,
+        "fecha": "2021-11-16",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 3
+    },
+    {
+        "id": 92353,
+        "fecha": "2021-11-17",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 3
+    },
+    {
+        "id": 92354,
+        "fecha": "2021-11-18",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 3
+    },
+    {
+        "id": 92355,
+        "fecha": "2021-11-19",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 3
+    },
+    {
+        "id": 92356,
+        "fecha": "2021-11-20",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 3
+    },
+    {
+        "id": 92357,
+        "fecha": "2021-11-21",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 3
+    },
+    {
+        "id": 92358,
+        "fecha": "2021-11-22",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 4
+    },
+    {
+        "id": 92359,
+        "fecha": "2021-11-23",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 4
+    },
+    {
+        "id": 92360,
+        "fecha": "2021-11-24",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 4
+    },
+    {
+        "id": 92361,
+        "fecha": "2021-11-25",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 4
+    },
+    {
+        "id": 92362,
+        "fecha": "2021-11-26",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 4
+    },
+    {
+        "id": 92363,
+        "fecha": "2021-11-27",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 4
+    },
+    {
+        "id": 92364,
+        "fecha": "2021-11-28",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 4
+    },
+    {
+        "id": 92365,
+        "fecha": "2021-11-29",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 5
+    },
+    {
+        "id": 92366,
+        "fecha": "2021-11-30",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 5
+    },
+    {
+        "id": 92367,
+        "fecha": "2021-12-01",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 1
+    },
+    {
+        "id": 92368,
+        "fecha": "2021-12-02",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 1
+    },
+    {
+        "id": 92369,
+        "fecha": "2021-12-03",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 1
+    },
+    {
+        "id": 92370,
+        "fecha": "2021-12-04",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 1
+    },
+    {
+        "id": 92371,
+        "fecha": "2021-12-05",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 1
+    },
+    {
+        "id": 92372,
+        "fecha": "2021-12-06",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 2
+    },
+    {
+        "id": 92373,
+        "fecha": "2021-12-07",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 2
+    },
+    {
+        "id": 92374,
+        "fecha": "2021-12-08",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 2
+    },
+    {
+        "id": 92375,
+        "fecha": "2021-12-09",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 2
+    },
+    {
+        "id": 92376,
+        "fecha": "2021-12-10",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 2
+    },
+    {
+        "id": 92377,
+        "fecha": "2021-12-11",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 2
+    },
+    {
+        "id": 92378,
+        "fecha": "2021-12-12",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 2
+    },
+    {
+        "id": 92379,
+        "fecha": "2021-12-13",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 3
+    },
+    {
+        "id": 92380,
+        "fecha": "2021-12-14",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 3
+    },
+    {
+        "id": 92381,
+        "fecha": "2021-12-15",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 3
+    },
+    {
+        "id": 92382,
+        "fecha": "2021-12-16",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 3
+    },
+    {
+        "id": 92383,
+        "fecha": "2021-12-17",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 3
+    },
+    {
+        "id": 92384,
+        "fecha": "2021-12-18",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 3
+    },
+    {
+        "id": 92385,
+        "fecha": "2021-12-19",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 3
+    },
+    {
+        "id": 92386,
+        "fecha": "2021-12-20",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 4
+    },
+    {
+        "id": 92387,
+        "fecha": "2021-12-21",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 4
+    },
+    {
+        "id": 92388,
+        "fecha": "2021-12-22",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 4
+    },
+    {
+        "id": 92389,
+        "fecha": "2021-12-23",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 4
+    },
+    {
+        "id": 92390,
+        "fecha": "2021-12-24",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 4
+    },
+    {
+        "id": 92391,
+        "fecha": "2021-12-25",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 6,
+        "semanaMes": 4
+    },
+    {
+        "id": 92392,
+        "fecha": "2021-12-26",
+        "estado": {
+            "id": 2,
+            "descripcion": "festivo",
+            "tipo": 1
+        },
+        "diaSemana": 7,
+        "semanaMes": 4
+    },
+    {
+        "id": 92393,
+        "fecha": "2021-12-27",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 1,
+        "semanaMes": 5
+    },
+    {
+        "id": 92394,
+        "fecha": "2021-12-28",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 2,
+        "semanaMes": 5
+    },
+    {
+        "id": 92395,
+        "fecha": "2021-12-29",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 3,
+        "semanaMes": 5
+    },
+    {
+        "id": 92396,
+        "fecha": "2021-12-30",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 4,
+        "semanaMes": 5
+    },
+    {
+        "id": 92397,
+        "fecha": "2021-12-31",
+        "estado": {
+            "id": 1,
+            "descripcion": "laborable",
+            "tipo": 1
+        },
+        "diaSemana": 5,
+        "semanaMes": 5
+    }
+]

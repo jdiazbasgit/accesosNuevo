@@ -1,0 +1,6 @@
+<td [ngClass]="{'laborable':esFestivo===false,'festivo':esFestivo===true}">{{datasource.fecha === null ? "" : datasource.fecha | date:'dd'}}
+    <select name="" id="" (change)="onChange($event.target.value)">
+        <option [selected]="datasource.estado.descripcion==='festivo'" value="festivo">festivo</option>
+        <option [selected]="datasource.estado.descripcion==='laborable'" value="laborable">laborable</option>
+    </select>
+</td>
