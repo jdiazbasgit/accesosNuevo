@@ -1,5 +1,2 @@
-
 import '@angular/localize/init';
-Included with Angular CLI.
-
-
+import 'zone.js/dist/zone';

@@ -16,11 +16,5 @@ bin/
 .springBeans
 .sts4-cache
 
-.vscode/
-
-=======
-# dependencies
-/node_modules
-
 ### VS Code ###
 .vscode/

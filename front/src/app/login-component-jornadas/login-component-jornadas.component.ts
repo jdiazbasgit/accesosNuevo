@@ -1,14 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { rejects } from 'node:assert';
-import { HeaderComponent } from '../header/header.component';
-
 import { Authentication } from '../jornada-datos.service'
 
 @Component({
   selector: 'app-login-component',
-  templateUrl: './login-component.component.html',
-  styleUrls: ['./login-component.component.css']
+  templateUrl: './login-component-jornadas.component.html',
+  styleUrls: ['./login-component-jornadas.component.css']
 })
 export class LoginComponentComponent implements OnInit {
 

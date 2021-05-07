@@ -5,10 +5,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class EmpleadosServiceService {
-  urlJSON: string = './assets/empleadosBBDD.json';
   //urlBBDD: string = 'http://10.68.9.250:80/api/empleados';
   urlBBDD: string = 'http://localhost:80/api/empleados';
-  urlLogin: string = 'http://localhost:80/api/user'
 
   constructor(private httpClient: HttpClient) { }
 
@@ -18,13 +16,9 @@ export class EmpleadosServiceService {
 
   postDatosEmpleado(empleado: Empleado) {
     return this.httpClient
-      //.post(this.urlBBDD, JSON.stringify(empleado), {headers: {"Content-Type": "application/json"}})      
       .post(this.urlBBDD, empleado, { headers: { "Authorization": sessionStorage.getItem('token').toString() } })
   }
 
-  postLogin() {
-    return this.httpClient.post(this.urlLogin, { username: "pepe", pwd: "1234" })
-  }
 }
 
 export class Empleado {

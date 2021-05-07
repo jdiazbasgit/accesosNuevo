@@ -1,8 +1,6 @@
 import { AfterViewInit, Component, TemplateRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
-import { Session } from 'node:inspector';
-import { element } from 'protractor';
 import { Jornada, JornadaDatosService } from '../jornada-datos.service';
 
 @Component({
