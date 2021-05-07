@@ -1,4 +1,4 @@
-package com.recrale.accesos.entidades;
+package cap.curso.accesos.entidades;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

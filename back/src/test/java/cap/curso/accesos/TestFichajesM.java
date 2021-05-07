@@ -5,16 +5,13 @@ import static org.junit.Assert.assertNull;
 
 import java.sql.Date;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
 
 import cap.curso.accesos.entidades.Calendario;
 import cap.curso.accesos.entidades.Empleado;
 import cap.curso.accesos.servicios.UsuariosEstadoServiceInterface;
-import cap.curso.accesos.entidades.Calendario;
-import cap.curso.accesos.entidades.Empleado;
 
 @SpringBootTest
 public class TestFichajesM

@@ -1,4 +1,4 @@
-package com.recrale.accesos.dtos;
+package cap.curso.accesos.DTOs;
 
 public class UserDto {
 

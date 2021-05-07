@@ -1,9 +1,9 @@
-package com.recrale.accesos.repositorios;
+package cap.curso.accesos.repositorios;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-import com.recrale.accesos.entidades.User;
+import cap.curso.accesos.entidades.User;
 
 public interface UsuarioRepository extends CrudRepository<User, Integer> {
 

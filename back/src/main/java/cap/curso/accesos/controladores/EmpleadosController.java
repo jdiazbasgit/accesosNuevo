@@ -1,4 +1,4 @@
-package com.recrale.accesos.controladores;
+package cap.curso.accesos.controladores;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.recrale.accesos.entidades.Employee;
-import com.recrale.accesos.repositorios.EmpleadoRepositoryInterface;
+import cap.curso.accesos.entidades.Employee;
+import cap.curso.accesos.repositorios.EmpleadoRepositoryInterface;
 
 @RestController
 @RequestMapping("/api")

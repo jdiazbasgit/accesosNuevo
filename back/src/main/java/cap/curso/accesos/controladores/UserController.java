@@ -1,4 +1,4 @@
-package com.recrale.accesos.controladores;
+package cap.curso.accesos.controladores;
 
 import java.util.Date;
 import java.util.List;
@@ -13,10 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.recrale.accesos.dtos.UserDto;
-import com.recrale.accesos.entidades.LoginData;
-import com.recrale.accesos.repositorios.UsuarioRepository;
-
+import cap.curso.accesos.DTOs.UserDto;
+import cap.curso.accesos.entidades.LoginData;
+import cap.curso.accesos.repositorios.UsuarioRepository;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 

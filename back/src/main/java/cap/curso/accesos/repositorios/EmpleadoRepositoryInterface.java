@@ -1,11 +1,11 @@
-package com.recrale.accesos.repositorios;
+package cap.curso.accesos.repositorios;
 
 
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.recrale.accesos.entidades.Employee;
+import cap.curso.accesos.entidades.Employee;
 
 @Repository
 public interface EmpleadoRepositoryInterface extends CrudRepository<Employee, Integer>
