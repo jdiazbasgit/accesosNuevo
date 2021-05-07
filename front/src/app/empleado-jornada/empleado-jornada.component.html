@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 class="display-1 text-center">Empleado-Jornadas</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>DNI</th>
+                <th>Jornada</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let empleado of datosEmp; index as i;">
+                <td>{{empleado.nombre}}</td>
+                <td>{{empleado.apellidos}}</td>
+                <td>{{empleado.dni}}</td>
+                <td hidden>{{empleado.id}}</td>
+                <td>
+                    <select class="form-select" name="jornadas" id="jornadas" (change)="jornadasChangeManejador($event.target.value, empleado)" >
+                        <option [ngValue]="null">Seleccionar jornada</option>
+                        <option *ngFor="let jornada of datosJor"  [value]="jornada.id" 
+                        [selected]="empleado.jornada.id
+                         === jornada.id">{{jornada.descripcion}}</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>

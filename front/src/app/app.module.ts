@@ -1,35 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { HttpClientModule } from "@angular/common/http";
-import { FormsModule } from "@angular/forms";
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { EmpleadosComponent } from './empleados/empleados.component';
-import { FormularioEmpleadoComponent } from './formulario-empleado/formulario-empleado.component';
-import { JornadaComponent } from './jornada/jornada.component';
-import { LoginComponentComponent } from './login-component-jornadas/login-component-jornadas.component';
-import { HeaderComponent } from './header/header.component';
-
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EmpleadoJornadaComponent } from './empleado-jornada/empleado-jornada.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    JornadaComponent,
-    LoginComponentComponent,
-    HeaderComponent,
-    EmpleadosComponent,
-    FormularioEmpleadoComponent
+    EmpleadoJornadaComponent
   ],
-  
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    NgbModule,
-    FormsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
