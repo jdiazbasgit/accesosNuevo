@@ -1,6 +1,6 @@
-package com.recrale.accesos.dtos;
+package cap.curso.accesos.dtos;
 
-public class UserDto {
+public class User {
 
 	private String user;
 	private String pwd;

@@ -14,19 +14,11 @@
  * limitations under the License.
  */
 
-package com.recrale.accesos;
-
-import java.util.List;
+package cap.curso.accesos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.hateoas.config.EnableHypermediaSupport;
-import org.springframework.hateoas.config.EnableHypermediaSupport.HypermediaType;
-import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 @SpringBootApplication
 public class AccesosApplication extends SpringBootServletInitializer {
@@ -37,17 +29,6 @@ public class AccesosApplication extends SpringBootServletInitializer {
 		SpringApplication.run(AccesosApplication.class, args);
 	}
 	
-	@Configuration
-	@EnableHypermediaSupport(type = HypermediaType.HAL)
-	public class WebMvcConfiguration extends WebMvcConfigurationSupport {
 
-	  @Override
-	  protected void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-	    final MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
-	    converter.getObjectMapper().findAndRegisterModules();
-
-	    converters.add(converter);
-	  }
-	}
 
 }
