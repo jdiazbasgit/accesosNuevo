@@ -1,68 +1,44 @@
 package cap.curso.accesos;
 
+import static org.junit.Assert.assertNotNull;
+
 import java.util.List;
 import java.util.Optional;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import cap.curso.accesos.entidades.Jornada;
+import cap.curso.accesos.repositorios.JornadaRepository;
 import cap.curso.accesos.servicios.JornadasServiceInterface;
 
 @SpringBootTest
+@RunWith(SpringRunner.class)
 public class TestJornadas
 {
 
 	@Autowired
-	JornadasServiceInterface jpaJornadaServiceInterface;
-
+	private JornadaRepository repository;
 	@Test
 	public void testVerJornadas()
 	{
-		List<Jornada> jornadas = (List<Jornada>) getJpaJornadaServiceInterface().findAll();
-		for (Jornada jornada : jornadas)
-		{
-			System.out.println(jornada.getId() + " - " + jornada.getDescripcion() + " - " + jornada.getLunes() + " - "
-					+ jornada.getMartes() + " - " + jornada.getMiercoles() + " - " + jornada.getJueves() + " - "
-					+ jornada.getViernes() + " - " + jornada.getEspecial());
-		}
+		assertNotNull(getRepository().findAll());
 	}
 	
-	@Test
-	public void testGuardarJornadas()
-	{
-		Jornada jornada = new Jornada();
-		
-		jornada.setDescripcion("Jornada Completa");
-		jornada.setLunes("8:00-14:00&15:00-17:30");
-		jornada.setMartes("8:00-14:00&15:00-17:30");
-		jornada.setMiercoles("8:00-14:00&15:00-17:30");
-		jornada.setJueves("8:00-14:00&15:00-17:30");
-		jornada.setViernes("8:00-15:00");
-		jornada.setEspecial(0);
-		
-		getJpaJornadaServiceInterface().save(jornada);
-	}
 	
-	@Test
-	public void testFindById()
-	{
-		Jornada jornada = getJpaJornadaServiceInterface().findById(1);
-		
-		System.out.println(jornada.getDescripcion());
+	public JornadaRepository getRepository() {
+		return repository;
+	}
+
+	public void setRepository(JornadaRepository repository) {
+		this.repository = repository;
 	}
 	
 	
 
-	public JornadasServiceInterface getJpaJornadaServiceInterface()
-	{
-		return jpaJornadaServiceInterface;
-	}
-
-	public void setJpaJornadaServiceInterface(JornadasServiceInterface jpaJornadaServiceInterface)
-	{
-		this.jpaJornadaServiceInterface = jpaJornadaServiceInterface;
-	}
+	
 
 }

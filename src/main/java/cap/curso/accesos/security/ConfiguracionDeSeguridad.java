@@ -17,7 +17,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 				.addFilterAfter(new JWTAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
 				.authorizeRequests().antMatchers(HttpMethod.POST, "/user").permitAll()
 				.antMatchers(HttpMethod.GET, "/help").permitAll()
-				//.antMatchers(HttpMethod.GET, "/api").permitAll()
+				.antMatchers(HttpMethod.GET, "/api").permitAll()
 				.anyRequest().authenticated();
 		}
 		
